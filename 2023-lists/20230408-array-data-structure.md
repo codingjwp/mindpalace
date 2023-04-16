@@ -72,6 +72,9 @@ del py_list[1]
 print(py_list) # 결과값 [1, 3, 4]
 ```
 
+### List 요소
+![array image](/record-lists/2023-lists/imgs/20230408-02.png)
+
 <br/>
 <br/>
 
