@@ -8,7 +8,7 @@
 
 <br/>
 
-![array list](/record-lists/2023-lists/imgs/20230408-01.png)
+![array list](./imgs/20230408-01.png)
 
 \- 배열을 생성하고 메모리 주소가 200으로 시작 했으고 연속적인 공간에 배열 인덱스 0, 1, 2의 값으로 접근할 수 있다.
 
@@ -73,7 +73,7 @@ print(py_list) # 결과값 [1, 3, 4]
 ```
 
 ### List 요소
-![array image](/record-lists/2023-lists/imgs/20230408-02.png)
+![array image](./imgs/20230408-02.png)
 
 <br/>
 <br/>
