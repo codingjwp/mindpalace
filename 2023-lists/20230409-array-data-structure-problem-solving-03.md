@@ -2,7 +2,8 @@
 
 ## 배열에서 삽입 위치 찾기
 
-***
+
+[웹에서 python(Python Tutor)](https://www.pythontutor.com)
 
 <details open>
   <summary>문제</summary>
@@ -66,13 +67,42 @@
 |- 2번 행동을 반복하여 해당 하는 조건에 맞는 경우를 따라 간다(3, 4, 5)|
 |- target과 같은 경우 찾으면 해당 index를 반환
 |- target이 없는 경우 마지막에 비교한 인덱스에 따라 작으면 +1 크면 해당 인덱스 
+|`---------------------------------------------------------------------------------`|
+| `1. 배열 요소를 이진 탐색으로 접근한다.`|
+| `2. 요소를 찾는다면 해당 인덱스 반환` |
+| `3. 끝까지 못찾는다면 최종 접근했던 낮은 인덱스 값을 반환`|
 
 ***
 
 ### 코드
-|내가 쓴 코드|
+|내가 쓴 코드 `(수정 후 너무 조건을 많이 넣어 간결히 함.)`|
 |:---|
 ```python
+from typing import List
+
+def arrayInsertIndex(nums: List[int], target: int)-> int:
+  for i in range(0, len(nums)):
+    if nums[i] >= target:
+      return i
+  return len(nums)
+
+
+nums1 = [1, 2, 3, 4, 5]
+target1 = 3
+nums2 = [1, 4, 5, 6]
+target2 = 0
+nums3 = [1, 4, 5, 6]
+target3 = 3
+nums5 = [1, 4, 5, 6]
+target5 = 6
+nums4 = [1, 4, 5, 6]
+target4 = 100
+print(arrayInsertIndex(nums1, target1), end=" ")
+print(arrayInsertIndex(nums2, target2), end=" ")
+print(arrayInsertIndex(nums3, target3), end=" ")
+print(arrayInsertIndex(nums5, target5), end=" ")
+print(arrayInsertIndex(nums4, target4))
+
 ```
 
 <br />
@@ -80,17 +110,53 @@
 |수정 코드|
 |:---|
 ```python
+from typing import List
+
+def arrayInsertIndex(nums: List[int], target: int)-> int:
+  low = 0
+  hig = len(nums) - 1
+
+  while low <= hig:
+    mid = int((low + hig) / 2)
+    if target == nums[mid]:
+      return mid
+    if target > nums[mid]:
+      low = mid + 1
+    else:
+      hig = mid - 1 
+    return low
+
+nums1 = [1, 2, 3, 4, 5]
+target1 = 3
+nums2 = [1, 4, 5, 6]
+target2 = 0
+nums3 = [1, 4, 5, 6]
+target3 = 3
+nums5 = [1, 4, 5, 6]
+target5 = 6
+nums4 = [1, 4, 5, 6]
+target4 = 100
+print(arrayInsertIndex(nums1, target1), end=" ")
+print(arrayInsertIndex(nums2, target2), end=" ")
+print(arrayInsertIndex(nums3, target3), end=" ")
+print(arrayInsertIndex(nums5, target5), end=" ")
+print(arrayInsertIndex(nums4, target4))
+
 ```
 
 ***
 ### 테스트 케이스
-`nums=[1,2,3,4,5] target=3`   
-`nums=[1,4,5,6] target=3`
+`nums = [1, 2, 3, 4, 5] target=3`   
+`nums = [1, 4, 5, 6] target=3`
+`nums = [1, 4, 5, 6] target = 0`
+`nums = [1, 4, 5, 6] target = 6`
+`nums = [1, 4, 5, 6] target = 100`
+
 ***
 ### 관련 사이트
-[LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array)   
-[Hackerrank](https://www.hackerrank.com/contests/doyoulikeit/challenges/remove-duplicates-from-sorted-array)   
-[백준 (배열 이용이 아닌 중복제거)](https://www.acmicpc.net/problem/13701)
+[LeetCode](https://leetcode.com/problems/search-insert-position)   
+[Hackerrank](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/)   
+
 ***
 
 [@다음문제](20230409-array-data-structure-problem-solving-04.md)

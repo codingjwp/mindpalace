@@ -1,6 +1,9 @@
 # Array Problem Solving 01
 
 ## 두 수 합 찾기
+
+[웹에서 python(Python Tutor)](https://www.pythontutor.com)
+
 <details open>
     <summary>문제</summary>
     주어진 정수형 배열에서 2개의 숫자를 선택하여 더한 값이 특정 목표값을 만들때 그 선택한 2개의 정수가 있는 배열의 인덱스를 반환하는 프로그램을 작성하라.

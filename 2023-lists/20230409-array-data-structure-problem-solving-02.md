@@ -1,8 +1,8 @@
 # Array Problem Solving 02
 
-## 정렬된 배열에서 중복 제거
+## 정렬된 배열에서 중복 제거    
 
-***
+[웹에서 python(Python Tutor)](https://www.pythontutor.com)
 
 <details open>
   <summary>문제</summary>
@@ -92,7 +92,7 @@ print(removeDuplication(testArray))
 ***
 ### 관련 사이트
 [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array)   
-[Hackerrank](https://www.hackerrank.com/contests/doyoulikeit/challenges/remove-duplicates-from-sorted-array)   
+[Hackerrank](https://www.hackerearth.com/contests/doyoulikeit/challenges/remove-duplicates-from-sorted-array)   
 [백준 (배열 이용이 아닌 중복제거)](https://www.acmicpc.net/problem/13701)
 ***
 
