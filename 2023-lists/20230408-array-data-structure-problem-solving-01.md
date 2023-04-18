@@ -101,3 +101,5 @@ nums: List[int] = [2, 7, 8, 11] target: int = 13
 [LeetCode](https://leetcode.com/problems/two-sum)   
 [Hackerrank](https://www.hackerrank.com/challenges/pairs/problem)   
 [백준](https://www.acmicpc.net/problem/3273)   
+
+[@다음 문제](20230409-array-data-structure-problem-solving-02.md)   

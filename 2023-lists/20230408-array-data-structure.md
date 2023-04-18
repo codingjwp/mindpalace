@@ -198,7 +198,10 @@ print()
 ```
 
 [@배열 문제풀이 두수의 합](20230408-array-data-structure-problem-solving-01.md)   
-[@배열 문제풀이 정렬된 배열에서 중복 제거](20230409-array-data-structure-problem-solving-02.md)
+[@배열 문제풀이 정렬된 배열에서 중복 제거](20230409-array-data-structure-problem-solving-02.md)   
+[@배열 문제풀이 배열의 삽입된 위치 찾기](20230409-array-data-structure-problem-solving-03.md)
+
+
 <br/>
 <br/>
 
