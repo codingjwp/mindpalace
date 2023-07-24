@@ -3,6 +3,11 @@
 - 코드가 너무 복장해 보여서 코드 읽기가 쉽지 않다.
 - react-icons사용으로 불필요한 라이브러리를 사용
 - 이미지 색상이 Lighthouse로 체크 해보았을 때 문제 발생.
+- Home 경우 버튼 크기가 너무 작아서 공간이 많이 남는 문제.
+
+<div align="center">
+  <img alt="button lighthouse" src="https://github.com/codingjwp/mindpalace/assets/113403155/f1d6d7bf-902b-412e-b378-6c5ccd209048" width=500 />
+</div>
 
 ### 문제점 해결 방안
 - 코드 정리
