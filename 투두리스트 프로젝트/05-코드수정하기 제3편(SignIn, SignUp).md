@@ -6,7 +6,7 @@
 - **유효성 검사 경고** 부분 색상 Ligthouse 검사
 - button 색상 Lighthouse에서 검사
 <div align="center">
-  <img width={500} src="" alt="SignIn 페이지 Lighthouse 검사">
+  <img src="https://github.com/codingjwp/mindpalace/assets/113403155/6c7dfcb4-7029-4b51-bf72-eed2dc4098ce" width="600px" alt="SignIn 페이지 Lighthouse 검사" />
 </div>
 
 ## 문제점 수정방법
