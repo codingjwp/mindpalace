@@ -110,18 +110,20 @@ interface ButtonStyleProps {
   ```
 - **After**
   - 특정 조건에 따른 style 경우 별도의 객체로 만들어서 관리하여 스타일 부분에 코드가 난잡하지 않게 수정
+  - disabled 상태 일떄는 hover 작동하지 않도록 수정
+  - filter 사용시 GPU를 사용하여 CPU와 에모리에 영향을 줄 수 있어 변경
   ```typescript
   const btnTheme = {
     "primary": css`
       background-color: #2929FF;
-      &:hover {
-        filter: brightness(.8);
+      &:not(:disabled):hover {
+        background-color: #0000C6;
       }
     `,
     "dismiss": css`
       background-color: #B31010;
-      &:hover {
-        filter: brightness(.8);
+      &:not(:disabled):hover {
+        background-color: #840C0C;
       }
     `
   };
@@ -145,6 +147,7 @@ interface ButtonStyleProps {
     `,
   }
   ```
+  - disabled에 따른 opacity 적용
   ```CSS
   const ButtonStyle = styled.button<ButtonStyleProps>`
     cursor: pointer;
@@ -158,6 +161,9 @@ interface ButtonStyleProps {
       align-items: center;
       & > svg {
         margin-right: .2rem;
+      }
+      &:disabled {
+        opacity: 0.7;
       }
     `}
   `
