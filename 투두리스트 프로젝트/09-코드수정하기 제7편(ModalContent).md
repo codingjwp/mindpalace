@@ -8,12 +8,13 @@
  - **ModalDataProps** Modal에 사용할 props 내용
  - **ModalContextPRops** 상태관리를 위해 사용할 내용
  ### Interface 및 createContext 내용
+ - **sucess**를 사용을 안해서 todo내용 전체를 보여주는 **detail**로 변환
 ```typescript
 import { Dispatch, SetStateAction, createContext, useState, ReactNode, useContext } from 'react'
 
 interface ModalDataProps {
   modalOpen: boolean;
-  modalType: "sucess" | "error";
+  modalType: "detail" | "error";
   modalMsg: string;
 }
 
@@ -30,7 +31,7 @@ const ModalContext = createContext<ModalContextProps | undefined>(undefined);
 export const ModalProvider = ({children}: {children: ReactNode}) => {
   const [modalData, setModalData] = useState<ModalDataProps>({
     modalOpen: false,
-    modalType: "sucess",
+    modalType: "detail",
     modalMsg: "",
   })
   
@@ -48,7 +49,7 @@ export const ModalProvider = ({children}: {children: ReactNode}) => {
 export const useModalState = () => {
   const modalState = useContext(ModalContext);
   if (!modalState)
-    throw new Error('Cannot find IssueProvider');
+    throw new Error('Cannot find modalProvider');
   const modalOpen = modalState.modalData.modalOpen;
   const modalType = modalState.modalData.modalType;
   const modalMsg = modalState.modalData.modalMsg;

@@ -91,6 +91,7 @@
   });
   ```
 - 수정 후
+- 따로 컴포넌트를 만들어서 `checkbox`만 사용 하도록 수정
   ```typescript
   interface InputFieldProps extends InputHTMLAttributes<HTMLInputElement>{
     type?: "text" | "password";
@@ -99,20 +100,18 @@
 
   export const InputField = forwardRef<HTMLInputElement, InputFieldProps>(({type, ...props}, ref) => {
       return (
-        <label>
+        <InputLabel>
           <InputFieldBase ref={ref} type={type} {...props} />
-        </label>
+        </InputLabel>
       );
   });
 
-  export const CheckBoxField: FC<InputFieldProps> = ({$ishidden, type, ...props}) => {
+  export const CheckBoxField: FC<InputFieldProps> = ({type, isCompleted, ...props}) => {
     return (
-      <label>
-        <InputFieldBase type='checkbox' checked={props.checked} $ishidden={$ishidden} {...props}/>
-        <CheckBoxBase checked={props.checked}>
-          {props.checked ? '✔️' : ''}
-        </CheckBoxBase>
-      </label>
+      <InputLabel $check='check'>
+        <InputFieldBase type='checkbox' $ishidden={true} defaultChecked={isCompleted} {...props}/>
+        <SvgIcon iconName={isCompleted ? 'checkbox' : 'uncheckbox'} fill={isCompleted ? '#2929FF' : '#000000'} />
+      </InputLabel>
     )
   } 
   ```

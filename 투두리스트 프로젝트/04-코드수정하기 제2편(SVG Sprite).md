@@ -23,6 +23,7 @@
 - 다른 방법을 찾아 보니 `SVG`에 `symbol` 태그를 넣고 거기에 `id`를 지정해서 만드는 형식
 ### SVG에 symbol 넣기
 - **symbol**에 **id**를 지정해주고 앞에 svg 내용을 넣어준다.
+- `btn-close`, `checkbox`, `uncheckbox` 추가
 ```xml
 <svg>
   <symbol id="btn-send-cancel">...</symbol>
@@ -30,38 +31,52 @@
   <symbol id="btn-delete">...</symbol>
   <symbol id="btn-edit">...</symbol>
   <symbol id="btn-uparrow">...</symbol>
+  <symbol id="btn-close">...</symbol>
+  <symbol id="checkbox">...</symbol>
+  <symbol id="uncheckbox">...</symbol>
 </svg>
 ``` 
 ### SVG use 사용하기
 - **symbol**의 **id**를 사용하기 위해서는 **use**를 사용해야 한다.
 - **href** 속성에 svg스프라이트가 있는 경로 **`${svg}`**, **`#${id}`** 를 합쳐서 string으로 넣어줘야 한다.
+- rotate 때문에 $direction 추가
 ```typescript
-import svg from '../assets/btnicon.svg'
-
 export interface SvgIconProps {
-  iconName: "btn-edit" | "btn-delete" | "btn-send" | "btn-send-cancel" | "btn-uparrow";
+  iconName: "btn-edit" | "btn-delete" | "btn-send" | "btn-send-cancel"
+    | "btn-uparrow" | "btn-close" | "checkbox" | "uncheckbox";
+  $direction: "up" | "down" | "left" | "right";
 }
 
 export const SvgIcon = ({iconName}: SvgIconProps) => {
   return (
-    <svg aria-label={iconName} width={24} height={24} {...props} xmlns="http://www.w3.org/2000/svg">
+    <svg aria-label={iconName} width={24} height={24} {...props}
+      xmlns="http://www.w3.org/2000/svg">
       <use href={`${svg}#${iconName}`} />
     </svg>
   )
 }
 ```
 - 하지만 이럴 경우 크기 지정 및 색상 변경을 해 줄 수가 없어 더 추가를 해줘야 했다.
+- **width**와 **height**, ((viewBox)) 추가
 - **SVGProps**로 svg에 필요한 속성 interface를 가져오고 **...prop**s로 관련 속성을 자동으로 넣어 줄수 있도록 수정하였다. 
 ```typescript
-import { FC, SVGProps } from "react";
-
 export interface SvgIconProps extends SVGProps<SVGSVGElement> { //...생략 }
 
-export const SvgIcon: FC<SvgIconProps> = ({iconName, ...props}) => {
+export const SvgIcon: FC<SvgIconProps> = ({iconName, $direction, ...props}) => {
+  const rotate = {
+    "up": `rotate(180 0 2)`,
+    "down": `rotate(0 0 0)`,
+    "left": `rotate(270 0 2)`,
+    "right": `rotate(90 0 2)`,
+  }
+  
   return (
-    <svg aria-label={iconName} width={24} height={24} {...props} xmlns="http://www.w3.org/2000/svg">
-    // ... 생략
-  );
+    <svg width={props.width ?? 24} height={props.height ?? 24}
+      transform={rotate[$direction]} viewBox="0 0 24 24" {...props}
+      xmlns="http://www.w3.org/2000/svg">
+      <use href={`${svg}#${iconName}`} />
+    </svg>
+  )
 }
 ```
 ## SVG 사용 이미지
@@ -70,6 +85,22 @@ export const SvgIcon: FC<SvgIconProps> = ({iconName, ...props}) => {
 ![스크린샷 2023-07-25 225042](https://github.com/codingjwp/mindpalace/assets/113403155/2155080c-6343-49be-aebc-af3d3c4c6740)
 
 ### 색상 및 크기 변환
-![스크린샷 2023-07-25 225108](https://github.com/codingjwp/mindpalace/assets/113403155/bcd54062-b7ef-4eff-9abd-f6bb738a9423)   
-![스크린샷 2023-07-25 225100](https://github.com/codingjwp/mindpalace/assets/113403155/d4eab6c6-e627-412b-a62e-14bdd9430746)
+- 이전 이미지 코드가 변경 되어 이미지 삭제
+- 이전 코드는 scale을 썼으나 현재는 `width`와 `height`로 props에 **iconWidth, iconHeight** 추가
+```typescript
+return (
+  <IconButton 
+    aria-label="create-todo-btn"
+    type="button"
+    iconName="btn-uparrow"
+    iconWidth="48"
+    iconHeight="48"
+    iconFill="#ffffff"
+    $size="circle"
+    $btnType={btnType}
+    $direction={isOpen}
+    $isIconOfText={"no"}
+    onClick={createTodoOpen}/>
+);
+```
 
