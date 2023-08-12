@@ -6,6 +6,7 @@
 # Test Files
 src/**/*.test.tsx
 ```
+![test파일](https://github.com/codingjwp/mindpalace/assets/113403155/cc2a2ae7-7995-4c80-a353-ccb71eba3558)
 
 ## useValidation 에서 경고 발생
 - 의존성 배열로 인한 `EMAIL_CHECK`가 경고 문구 생성
@@ -24,6 +25,7 @@ const changeEmailData = useCallback((e: ChangeEvent<HTMLInputElement>) => {
   else if (!check && isEmail) setIsEmail(false); 
 }, [isEmail]);
 ```
+![useValidation경고](https://github.com/codingjwp/mindpalace/assets/113403155/ccbb6a9d-f9dd-485d-b269-6716059360cc)
 
 ## Home 부분에 react-refresh 부분에서 경고 발생
 - 컴포넌트 부분에 컴포넌트 외 것 이 선언되어 있을 경우 react-refresh가 되지 않아 경고 발생.
@@ -46,11 +48,16 @@ export const HomeContainer = styled.div`
   justify-content: space-around;
 `;
 ```
+![home경고](https://github.com/codingjwp/mindpalace/assets/113403155/1eab55ef-bae7-4e96-9958-57065f4e90ed)
+
 ## btnicon.svg 에러 발생
 - 읽을 수 있는 파일이 아닌데 체크가 되어 **`.eslintignore`**에 아래 문구 추가
+![btniconSVG에러](https://github.com/codingjwp/mindpalace/assets/113403155/581e5dd7-f096-4cf1-8543-d1d25a42dd78)
 
 ## ModalContext hooks 부분 경고 발생
 - 컴포넌트 부분에 컴포넌트 외 것 이 선언되어 있을 경우 react-refresh가 되지 않아 경고 발생.
+![modalcontext경고](https://github.com/codingjwp/mindpalace/assets/113403155/9b718542-30a6-41f0-aeac-839e404f2aa0)
+
 
 ## Axios에 반환대는 값들을 전부 any 되어 있어서 에러 발생 
 - get, put, post, delete 전부 <type>에 맞는 타입을 지정해줌
@@ -61,6 +68,8 @@ export const HomeContainer = styled.div`
 // 변경한 타입
 todoAxios.put<TodoDataProps>
 ```
+![todoAxion경고](https://github.com/codingjwp/mindpalace/assets/113403155/0798a23e-b4fa-4403-a80d-503da4f4a30f)
+
 
 ##  error  Promise-returning function provided to attribute where a void return was expected  @typescript-eslint/no-misused-promises
 - form 태그의 onSumbit에 `Promise<void>`를 반환하는 비동기 함수를 넣으니 발생 하는 에러입니다.
