@@ -34,3 +34,27 @@
     // API 기능
   }
 ``` 
+
+### validation 부분에서 오류 발생
+- `Link`를 통해 **`signup, signin`** 경로로 페이지를 넘길때 **`form`**에 있는 **`input`** 및 **useValidation Hook** 에 써놓은 **input 글자가 남아 있는 것**과 **경고문을 표시**해주는 기능이 작동 하지 않는 문제가 있어서 수정하였습니다.
+- input value 값 남아 있는 부분 수정 하기 (`titles` 값이 변경하는 것에 따라 `reset`처리)
+```typescript
+// SigInOfUp uesEffect 사용
+  useEffect(() => {
+    if (titles) {
+      const form = document.querySelector('form');
+      form?.reset();
+    }
+  }, [titles])
+```
+- `useValidation` 경고문 초기화 (매개변수 `titles` 넣어 `titles` 변경시 `false`값으로 변경)
+```typescript
+
+export const useValidation = (titles: string) => {
+  useEffect(() => {
+    if (titles) {
+      setIsEmail(false);
+      setIsPassword(false);
+    }
+  }, [titles])
+```

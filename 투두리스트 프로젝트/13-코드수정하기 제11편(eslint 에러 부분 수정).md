@@ -1,4 +1,15 @@
 # eslint 부분 에러 수정 하기
+## no-ignore waring이 발생하는 부분.
+- 검사가 필요하지 않는 부분을 .eslintignore 에 넣어도 waring이 뜨는 경우가 계속 생겨 없앨 수 있는 방법을 찾아 보았습니다.
+- 물론 `--quiet`으로 eslint 하는 옵션으로 경고를 없애는 옵션이 있지만 해당 부분은 기능적인 경고가 있을 경우에도 안보이기 때문에 별로 좋지 않는 옵션으로 판단했습니다.
+- 찾아보니 **eslint --cache --ext .ts,.tsx src/\*\*/*.{ts, tsx}** 으로 **src/\*\*/*.{ts, tsx}** 뒤에 ** 넣는 경우 경고를 생성 한다고 합니다.
+- 그래서 `--quiet` 쓰는 방법 만 있으며 아니면 **eslint .** 방식으로 변경 해야 한다고 하여 검사 명령어를 변경 하였습니다.
+```bash
+# Before command 
+eslint --cache --ext .ts,.tsx src/\*\*/*.{ts, tsx}
+# After command
+eslint --cache --ext .ts,.tsx src/
+```
 ## test.tsx 파일에 error 나오는 문제
 - 해당 파일은 에러 체크를 하지 말아야하는데 체크가 되어서 체크 안되도록 수정
 - **`.eslintignore`**에 아래 문구 추가
