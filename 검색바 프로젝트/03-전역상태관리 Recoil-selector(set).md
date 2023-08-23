@@ -7,6 +7,7 @@
 사용자는 selector를 새 값으로 설정하거나 selecotr을 재설정 할 수 있으므로 수신되는 값은 selector가 나타내는 것과 **동일한 유형**이거나 재설정 작업을 나태내는 **DefaultValue 객체**입니다.
 
 - 예시 : [출처 Recoil 공식문서](https://recoiljs.org/docs/api-reference/core/selector#writeable-selectors)
+- 기본적으로 atom을 래핑하여 추가 필드를 추가합니다.
 
   ```typescript
   const proxySelector = selector({
@@ -16,9 +17,20 @@
   });
   ```
 
-### 궁금한 단어
+- 아래와 같은 경우 데이터가 변환하므로 들어오는 값이 [DefaultValue](#defaultvalue)인지 확인이 필요합니다.
 
-#### 업스트림(upstream)
+  ```typescript
+  const transformSelector = selector({
+    key: 'TransformSelector',
+    get: ({get}) => get(myAtom) * 100,
+    set: ({set}, newValue) =>
+      set(myAtom, newValue instanceof DefaultValue ? newValue : newValue / 100),
+  });
+  ```
+
+### **궁금한 단어**
+
+#### **업스트림(upstream)**
 
 - 특정 상태(atom 또는 selector)가 다른 상태들에 의존할 때, 의존되는 상태들을 지칭합니다
 
@@ -37,4 +49,33 @@ const stateC = selector({
     return aValue * bValue;
   },
 });
+```
+
+#### **DefaultValue**
+
+- ***DefaultValue***는 Recoil에서 제공하는 ***특별한 타입의 객체***입니다. 이것은 ***상태를 기본값***으로 되돌리고 싶을때 사용하는 특별한 신호 같은 것 입니다.
+
+```typescript
+import { DefalutValue } from 'recoil';
+
+const myAtom = atom({
+  key: "myAtom",
+  defalut: 10,
+});
+
+const mySelector = selector({
+  key: "mySelector",
+  get: ({get}) => get(myAtom),
+  set: ({set}, newValue) => set(myAtom, newValue instanceof DefaultValue ? newValue: newValue * 2),
+});
+
+const MyComponent = () => {
+  const [value, setValue] = useRecoilState(mySelector);
+  const initValue = () => {
+    // DefaultValue로 상태를 기본값으로 초기화
+    setValue(new DefaultValue())
+  }
+  // ... 생략
+}
+
 ```
