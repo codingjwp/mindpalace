@@ -151,3 +151,7 @@ ES6 기능을 제공하지 않는 브라우저를 지원하는 경우 `Babel`로
   }
 }
 ```
+
+---
+
+[다음 페이지 Recoil `<RecoilRoot>`](./01-전역상태관리%20Recoil-RecoilRoot.md)

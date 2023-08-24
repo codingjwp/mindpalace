@@ -79,3 +79,7 @@ const MyComponent = () => {
 }
 
 ```
+
+---
+[**이전페이지 Recoil selector(기본편)**](./03-전역상태관리%20Recoil-selector(기본편).md)  
+[**다음페이지 Recoil selecotr(비동기)**](./05-전역상태관리%20Recoil-selector(비동기)%20.md)

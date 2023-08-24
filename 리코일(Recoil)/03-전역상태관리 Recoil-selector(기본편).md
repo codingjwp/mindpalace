@@ -123,3 +123,8 @@ const searchTextSelector = selector({
     },
   });
   ```
+
+---
+
+[**이전페이지 Recoil Atom**](./02-전역상태관리%20Recoil-Atoms.md)  
+[**다음페이지 Recoil selecotr(set)**](./04-전역상태관리%20Recoil-selector(set).md)

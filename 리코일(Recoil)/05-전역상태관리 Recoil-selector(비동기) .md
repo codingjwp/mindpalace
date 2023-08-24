@@ -84,6 +84,52 @@ function MyApp() {
 
 Error Boundary는 에러가 발생한 부분 대신 오류 메세지를 같은 fullback UI를 표시할 수 있는 특수 컴포넌트 입니다.  
 
-Error Boundary 컴포넌트 구현을 위해 static ***getDerivedStateFromError***을 이용해 에러에 대한 응답을 상태를 업데이트하고 에러 메세지를 표시해야합니다.  
+Error Boundary 컴포넌트 구현을 위해 [***static getDerivedStateFromError***](#static-getderivedstatefromerror)을 이용해 에러에 대한 응답을 상태를 업데이트하고 에러 메세지를 표시해야합니다.  
+
+---
+#### static getDerivedStateFromError
+
+***매개변수***  
+error : 실제로 일반적인 Error의 인스턴스이지만 자바스크립트에서는 문자열 null을 포함한 모든 값을 던질 수 있기때문에 무조건 적으로 Error인스턴스가 보장되지는 않습니다.  
+
+***리턴값***  
+컴포넌트에 오류메세지를 표시하도록 지시하는 상태를 반환.
+
+***주의***  
+해당 `static getDerivedStateFromError`은 순수 함수여야합니다.
+
+---
 
 또한 선택적으로 ***componentDidCatch***를 구현하여 분석 서비스에 오류를 기록하는등 추가 로직을 추가할 수 있습니다.  
+
+ErrorBoundary 예제: [출처 React 공식 문서](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)
+
+```typescript
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, info) {
+    logErrorToMyService(error, info.componentStack);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback;
+    }
+    return this.props.children;
+  }
+}
+
+<ErrorBoundary fallback={<p>Something went wrong</p>}>
+  <Profile />
+</ErrorBoundary>
+```
+
+현재로는 Error Boundary를 함수로 작성하는 방법이 없으며 직접 작성하는 방법말고 [`react-error-boundary`](https://github.com/bvaughn/react-error-boundary) 라이브러리를 사용하는 방법이 있습니다.
