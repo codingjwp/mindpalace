@@ -28,6 +28,19 @@
   });
   ```
 
+### **typescript로 인한 타입에러가 발생시**
+
+selector부분에 타입을 지정 get, set부분에 적용.
+
+```typescript
+const transformSelector = selector<number | DefaultValue>({
+  key: 'TransformSelector',
+  get: ({get}) => get(myAtom) * 100,
+  set: ({set}, newValue) =>
+    set(myAtom, newValue instanceof DefaultValue ? newValue : newValue / 100),
+});
+```
+
 ### **궁금한 단어**
 
 #### **업스트림(upstream)**
