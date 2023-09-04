@@ -1,4 +1,4 @@
-# **JavaScript 기본**
+# **JavaScript 기본 1편**
 
 ## **DOM**
 
