@@ -1,11 +1,8 @@
-# **Learn React**
-
-## **Quick Start(빠른 시작)**
+# **Learn React > Quick Start(빠른 시작)**
 
 Welcome to the React documentation! This page will give you an introduction to the 80% of React concepts that you will use on a daily basis.
 
 > React 문서에 오신것을 환영합니다. 이 페이지에서 여러분이 사용하게 될 React 개념의 80%에 대해 소개합니다.
-
 
 You will learn
 
@@ -16,13 +13,14 @@ You will learn
 - How to respond to events and update the screen
 - How to share data between components
 
-> 학습내용
-> - 컴포넌트 생성 및 중첩하는 방법
-> - 마크업과 스타일을 추가하는 법
-> - 데이터를 표시하는 법
-> - 조건과 목록을 렌더링하는 법
-> - 이벤트에 응답하고 화명을 업데이트 하는 법
-> - 컴포넌트 간에 데이터를 공유하는 법
+> 학습내용  
+>
+> - 컴포넌트 생성 및 중첩하는 방법  
+> - 마크업과 스타일을 추가하는 법  
+> - 데이터를 표시하는 법  
+> - 조건과 목록을 렌더링하는 법  
+> - 이벤트에 응답하고 화명을 업데이트 하는 법  
+> - 컴포넌트 간에 데이터를 공유하는 법  
 
 ## **Creating and nesting components(컴포넌트 생성 및 중첩하는 방법)**
 
@@ -121,7 +119,7 @@ Then you write the CSS rules for it in a separate CSS file:
 }
 ```
 
-React does not prescribe how you add CSS files. In the simplest case, you’ll add a <link> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.
+React does not prescribe how you add CSS files. In the simplest case, you’ll add a `<link>` tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.
 
 > React는 CSS 파일을 추가하는 방법을 규정하지 않습니다.  
 > 가장 간단한 방법은 HTML `<link>` 태그를 추가하면 됩니다.  
@@ -234,7 +232,7 @@ All of these approaches also work for conditionally specifying attributes. If yo
 You will rely on JavaScript features like for loop and the array map() function to render lists of components. For example, let’s say you have an array of products:
 
 > 컴포넌트 목록을 렌더링하기 위해 for루프나 map() 함수 같은 자바스크립트 기능을 사용하게 됩니다.
-> 예를 들어 
+> 예를 들어
 
 ```javascript
 const products = [
@@ -260,7 +258,7 @@ return (
 );
 ```
 
-Notice how <li> has a key attribute. For each item in a list, you should pass a string or a number that uniquely identifies that item among its siblings. Usually, a key should be coming from your data, such as a database ID. React uses your keys to know what happened if you later insert, delete, or reorder the items.
+Notice how `<li>`has a key attribute. For each item in a list, you should pass a string or a number that uniquely identifies that item among its siblings. Usually, a key should be coming from your data, such as a database ID. React uses your keys to know what happened if you later insert, delete, or reorder the items.
 
 > `<li>`에 ***key*** 속성이 있는 것을 주목하세요.  
 > 목록의 각 항목에 해당 항목을 고유하게 식별하는 문자열 또는 숫자를 전달해야합니다.  
@@ -388,7 +386,6 @@ Notice how each button “remembers” its own count state and doesn’t affect 
 > 각 버튼이 자체 카운트 상태를 ***기억***하고 다른 버튼에 영향을 주지 않는 방식을 주목하세요.
 
 ## **Using Hooks(훅 사용)**
-
 
 Functions starting with use are called Hooks. useState is a built-in Hook provided by React. You can find other built-in Hooks in the [API reference.](https://react.dev/reference/react) You can also write your own Hooks by combining the existing ones.
 
