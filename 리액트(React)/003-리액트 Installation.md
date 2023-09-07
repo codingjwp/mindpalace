@@ -13,15 +13,13 @@
 - [React TypeScript 치트시트](https://react-typescript-cheatsheet.netlify.app/)  는 React와 함께 TypeScript를 사용하기 위해 커뮤니티에서 관리하는 치트시트로, 많은 유용한 엣지 케이스를 다루고 이 문서보다 더 폭넓은 내용을 제공합니다.
 - [TypeScript Community Discord는](https://discord.com/invite/typescript)  TypeScript 및 React 문제에 대해 질문하고 도움을 받을 수 있는 좋은 장소입니다.
 
-<aside style="background-color: #befae9; border-radius: 10px; padding: 10px;">
-<img src="https://www.notion.so/icons/light-bulb_green.svg" alt="https://www.notion.so/icons/light-bulb_green.svg" width="40px" />
-<h3 style="display: inline; color: green;"><b>목록</b></h3>
+<dl>
+  <dt>
+    <img src="https://www.notion.so/icons/light-bulb_green.svg" alt="https://www.notion.so/icons/light-bulb_green.svg" width="24px" />
+    <strong>목록</strong>
+  </dt>
+</dl>
 
-<br>
-
-</aside>
-
-<br>
 
 Previous : [Quick Start](./000-리액트%20Quick%20Start.md)  
 
