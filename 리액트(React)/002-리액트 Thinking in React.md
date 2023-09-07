@@ -12,6 +12,7 @@ React를 사용하여 UI를 구출할때 먼저 이를 구성요소라는 조각
 - CSS: 클래스 선택자를 무엇으로 만들 것인지 고려.
 - Design: 디자인 레이어를 어떻게 구성할지 고려.
 
+![Untitled](https://github.com/codingjwp/mindpalace/assets/113403155/6f90337e-96cf-4491-a86e-879eb4c6f54d)
 
 다섯 가지의 구성요소
 
