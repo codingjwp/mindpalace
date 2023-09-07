@@ -60,8 +60,9 @@ UI를 대화형으로 만들기 위해 사용자가 기본 Data 모델을 변경
     <img src="https://www.notion.so/icons/light-bulb_green.svg" alt="https://www.notion.so/icons/light-bulb_green.svg" width="24px" />
     애플리케이션에 필요한 <strong>최소한의 표현</strong> 을 파악하고 필요에 따라 모든것을 계산 합니다.
   </dt>
-  <dd>ex ) 쇼핑 목록을 작성하는 경우 항목의 상태를 배열로 저장.</dd>
-  <dd>목록의 항목 수도 표시하려면 항목 수를 다른 상태값으로 저장하지말고 배열의 길이를 읽기.</dd>
+  <br/>
+  <dd>ex ) 쇼핑 목록을 작성하는 경우 항목의 상태를 배열로 저장.  <br/>
+    목록의 항목 수도 표시하려면 항목 수를 다른 상태값으로 저장하지말고 배열의 길이를 읽기.</dd>
 </dl>
 
 
@@ -73,13 +74,14 @@ UI를 대화형으로 만들기 위해 사용자가 기본 Data 모델을 변경
 4. 필터링 된 제품 목록 **(원래 제품목록으로 계산할 수 있으므로 상태가 아님)**
 
 <dl>
-  <dt>
-    <img src="https://www.notion.so/icons/light-bulb_green.svg" alt="https://www.notion.so/icons/light-bulb_green.svg" width="24px" />
-    <strong>상태가 되는 것은 무엇일까??? (전부 상태가 아니다)</strong>
-  </dt>
-  <dd>시간이 지나도 변함없이 유지 되는가?</dd>
-  <dd>props를 통해 부모로 전달되는가?  </dd>
-  <dd>기존 state나 props로 계산할 수 있는가?</dd>  
+    <dt>
+        <img src="https://www.notion.so/icons/light-bulb_green.svg" alt="https://www.notion.so/icons/light-bulb_green.svg" width="24px" />
+        <strong>상태가 되는 것은 무엇일까??? (전부 상태가 아니다)</strong>
+    </dt>
+    <br/>
+    <dd>1. 시간이 지나도 변함없이 유지 되는가?<br/>
+        2. props를 통해 부모로 전달되는가?<br/>
+        3. 기존 state나 props로 계산할 수 있는가?</dd>  
 </dl>
 
 ### Props vs State
@@ -96,16 +98,18 @@ state: 구성요소의 메로리와 같습니다. 일부 정보를 추적하고 
     <img src="https://www.notion.so/icons/light-bulb_green.svg" alt="https://www.notion.so/icons/light-bulb_green.svg" width="24px" />
     <strong>애플리케이션 state에 대해</strong>
   </dt>
-  <dd>1. 해당 상태를 기반으로 무언가를 렌더링하는 모든 컴포넌트를 식별.</dd>
-  <dd>2. 가장 가까운 공통 상위 컴포넌트, 즉 계층 구조에서 모든 컴포넌트 위에 있는 컴포넌트를 찾기.</dd>
+  <br/>
+  <dd>1. 해당 상태를 기반으로 무언가를 렌더링하는 모든 컴포넌트를 식별.<br/>
+      2. 가장 가까운 공통 상위 컴포넌트, 즉 계층 구조에서 모든 컴포넌트 위에 있는 컴포넌트를 찾기.</dd>
 
   <dt>
     <img src="https://www.notion.so/icons/light-bulb_green.svg" alt="https://www.notion.so/icons/light-bulb_green.svg" width="24px" />
     <strong>상태가 어디에 위치할지 결정</strong>
   </dt>
-    <dd>1. 흔히 상태를 공통 부모 컴포넌트에 직접 넣을 수 있음.</dd>
-    <dd>2. 상태를 공통 부모 위에 있는 컴포넌트에 넣을 수도 있음</dd>
-    <dd>3. 상태를 소유하기에 적합한 컴포넌트를 찾을 수 없는 경우 상태를 보유하기 위한 컴포넌트를 새로 만들어 공통 부모 컴포넌트 위의 계층 구조 어딘가에 추가.</dd>
+    <br/>
+    <dd>1. 흔히 상태를 공통 부모 컴포넌트에 직접 넣을 수 있음.<br/>
+        2. 상태를 공통 부모 위에 있는 컴포넌트에 넣을 수도 있음<br/>
+        3. 상태를 소유하기에 적합한 컴포넌트를 찾을 수 없는 경우 상태를 보유하기 위한 컴포넌트를 새로 만들어 공통 부모 컴포넌트 위의 계층 구조 어딘가에 추가.</dd>
 </dl>
 
 1. 상태를 사용하는 구성 요소를 식별.
