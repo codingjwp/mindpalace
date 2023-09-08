@@ -147,6 +147,6 @@ key는 데이터페이스의 고유한 데이터 베이스 key/ID를 사용
 
 컴포넌트는 key를 소품으로 받지 않는다는 점에 유의하세요. React 자체에서 힌트로만 사용됩니다. 컴포넌트에 ID가 필요한 경우 별도의 props로 전달해야 합니다. `<Profile key={id} userId={id} />`
 
-Previous : [Conditional Rendering](./010-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Conditional%20rendering.md)
+⏮️ Previous : [Conditional Rendering](./010-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Conditional%20rendering.md)
 
-Next : [Keeping Components Pure](./012-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Keeping%20components%20pure.md)
+⏭️ Next : [Keeping Components Pure](./012-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Keeping%20components%20pure.md)
