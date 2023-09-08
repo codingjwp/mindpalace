@@ -53,7 +53,8 @@ export default function TeaSet() {
   );
 ```
 
-![Untitled](Keeping%20components%20pure%20519a76b106bd4b38bc15a1a1c59c81e4/Untitled.png)
+![image](https://github.com/codingjwp/mindpalace/assets/113403155/014571f2-f4fc-402d-a866-ecc151a0c795)  
+
 
 ### props로 전달하여 순수 함수로 변경
 
@@ -142,6 +143,6 @@ event 핸들러가 컴포넌트 내부에 정의되어 있더라도 렌더링 �
 2. 입력이 변경되지 않은 컴포넌트의 렌더링을 건너뛰면 성능을 향상시킬 수 있음. 순수 함수는 항상 동일한 결과를 반환하므로 캐싱해도 안전.
 3. **deep component tree**를 렌더링하는 도중에 일부 데이터가 변경되는 경우, React는 오래된 렌더링을 완료하기 위해 시간을 낭비하지 않고 렌더링을 다시 시작할 수 있음. 순수성를 사용하면 언제든지 계산을 중단해도 안전.
 
-Previous: [Rendering Lists](./011-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Rendering%20lists.md)
+⏮️ Previous: [Rendering Lists](./011-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Rendering%20lists.md)
 
-Next: Adding Interactivity
+⏭️ Next: Adding Interactivity
