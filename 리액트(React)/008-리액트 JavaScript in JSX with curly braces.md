@@ -88,6 +88,6 @@ const person = {
 </div>
 ```
 
-Previous : [Writing Markup with JSX](./007-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Writing%20markup%20with%20JSX.md)
+⏮️ Previous : [Writing Markup with JSX](./007-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Writing%20markup%20with%20JSX.md)
 
-Next : [Passing Props to a Component](./009-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Passing%20props%20to%20a%20component.md)
+⏭️ Next : [Passing Props to a Component](./009-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Passing%20props%20to%20a%20component.md)
