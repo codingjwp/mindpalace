@@ -45,9 +45,9 @@ function Avatar(props) {
 
 ## 소품의 default value 지정
 
-`size={undefined}`. `size={null}` 같이 props가 없을 경우  default value가 적용됨.  
+`size={undefined}` 와 size props가 없을 경우  **default value**가 적용됨. 
 
-`size={0}` 경우 default value가 사용되지 않음**.**
+`size={null}` ,`size={0}` 경우 **default value**가 사용되지 않음.
 
 ```javascript
 function Avatar({person, size = 100}) {
