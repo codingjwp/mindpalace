@@ -75,6 +75,8 @@ export default function Gallery() {
 ## 컴포넌트 중첩 및 구성
 
 - 컴포넌트를 한번 정의하면 원하는 만큼 여러번 적용 가능
+
+**주의 사항**  
 컴포넌트는 다른 구성요소를 렌더링 할 수 있지만 정의를 중첩해서는 안됨. 느리고 버그를 유발
 
 ```javascript
@@ -94,6 +96,6 @@ function Profile(){
 }
 ```
 
-Previous: [Describing the UI](./004-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Describing%20the%20UI.md)
+⏮️ Previous: [Describing the UI](./004-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Describing%20the%20UI.md)
 
-Next : [Importing and Exporting Components](./006-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Importing%20and%20exporting%20components.md))
+⏭️ Next : [Importing and Exporting Components](./006-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Importing%20and%20exporting%20components.md))
