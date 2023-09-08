@@ -12,7 +12,10 @@
 
 ## Default vs named export (기본 내보내기 및 명명 내보니기)
 
-![내보내기 종류들](Importing%20and%20exporting%20components%2042663cc6ab1a4a879d8d5a59f974f0e3/Untitled.png)
+![image](https://github.com/codingjwp/mindpalace/assets/113403155/13b39040-edf0-4cea-8a75-6e98dc4cb896)
+
+출처: [react 공식 문서](https://react.dev/learn/importing-and-exporting-components#default-vs-named-exports)
+  
 
 내보내기 종류들
 
@@ -29,6 +32,6 @@
 
 `export default () ⇒{}` 이름 없는 컴포넌트는 디버깅이 어렵게 만들수 있기에 사용하지 않는 것이 좋다.
 
-Previous : [Your First Component](./005-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Your%20first%20component.md)
+⏮️ Previous : [Your First Component](./005-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Your%20first%20component.md)
 
-Next : [Writing Markup with JSX](./007-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Writing%20markup%20with%20JSX.md)
+⏭️ Next : [Writing Markup with JSX](./007-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Writing%20markup%20with%20JSX.md)
