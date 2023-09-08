@@ -12,7 +12,10 @@
 
 Javascript가 HTML을 담당. 그렇기 때문에 React에서는 렌더링 로직과 마크업이 같은 위치의 컴포넌트에 존재.
 
-![Untitled](Writing%20markup%20with%20JSX%208c0a6d69d84c456ba4ac1e18f7ab7e90/Untitled.png)
+![image](https://github.com/codingjwp/mindpalace/assets/113403155/28443719-4d87-446f-bf33-b0757efe608c)  
+
+출처 : [react 공식 문서](https://react.dev/learn/writing-markup-with-jsx#jsx-putting-markup-into-javascript)  
+
 
 JSX와 React는 서로 다른 두 가지. 종종 함께 사용되기도 하지만 서로 [독립적으로 사용.](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#whats-a-jsx-transform) JSX는 구문 확장이고 React는 자바스크립트 라이브러리.
 
@@ -53,6 +56,6 @@ JSX로 작성된 속성은 Javascript 객체의 키로 쓰이고 컴포넌트에
 
 [HTML을 JSX로 변환기](https://transform.tools/html-to-jsx)
 
-Previous [: Importing and Exporting Components](./006-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Importing%20and%20exporting%20components.md\)
+⏮️ Previous [: Importing and Exporting Components](./006-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Importing%20and%20exporting%20components.md)
 
-Next : [JavaScript in JSX with Curly Braces](./008-%EB%A6%AC%EC%95%A1%ED%8A%B8%20JavaScript%20in%20JSX%20with%20curly%20braces.md)
+⏭️ Next : [JavaScript in JSX with Curly Braces](./008-%EB%A6%AC%EC%95%A1%ED%8A%B8%20JavaScript%20in%20JSX%20with%20curly%20braces.md)
