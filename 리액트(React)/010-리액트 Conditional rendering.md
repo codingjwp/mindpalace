@@ -76,6 +76,6 @@ messageCount && <p>New messages</p>
 messageCount > 0 && <p>New messages</p>
 ```
 
-Previous : [Passing Props to a Component](./009-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Passing%20props%20to%20a%20component.md)
+⏮️ Previous : [Passing Props to a Component](./009-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Passing%20props%20to%20a%20component.md)
 
-Next : [Rendering Lists](./011-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Rendering%20lists.md)
+⏭️ Next : [Rendering Lists](./011-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Rendering%20lists.md)
