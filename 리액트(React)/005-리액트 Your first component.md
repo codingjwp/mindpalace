@@ -98,4 +98,4 @@ function Profile(){
 
 ⏮️ Previous: [Describing the UI](./004-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Describing%20the%20UI.md)
 
-⏭️ Next : [Importing and Exporting Components](./006-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Importing%20and%20exporting%20components.md))
+⏭️ Next : [Importing and Exporting Components](./006-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Importing%20and%20exporting%20components.md)
