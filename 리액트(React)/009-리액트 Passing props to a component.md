@@ -119,6 +119,6 @@ export default function Profile() {
 
 `props`는 불변입니다. 컴포넌트가 `props`를 변경해야 하는 경우 상위 컴포넌트에 다른 `props`, 즉 새로운 객체를 전달 하도록 **요청**이 필요. 그런 다음 오래된 `props`는 폐기되고 해당 `prop`가 차지한 메모리를 회수.
 
-Previous : [Javascript in JSX with Curly Braces](./008-%EB%A6%AC%EC%95%A1%ED%8A%B8%20JavaScript%20in%20JSX%20with%20curly%20braces.md)
+⏮️ Previous : [Javascript in JSX with Curly Braces](./008-%EB%A6%AC%EC%95%A1%ED%8A%B8%20JavaScript%20in%20JSX%20with%20curly%20braces.md)
 
-Next: [Conditional Rendering](./010-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Conditional%20rendering.md)
+⏭️ Next: [Conditional Rendering](./010-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Conditional%20rendering.md)
