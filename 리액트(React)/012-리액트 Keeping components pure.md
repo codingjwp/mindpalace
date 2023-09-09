@@ -109,7 +109,7 @@ export default function TeaGathering() {
 
 `cups = []` 배열이 `TeaGathering` 외부에 생성 되었다면 문제이나 동일한 렌더링 중 내부에서 생성했기 때문에 괜찮음.
 
-`TeaGathering` 외부의 어떤 코드도 이런 일이 발생했다는 걸 알 수 없으므로 이를 **지역 번이** 라고 합니다.
+`TeaGathering` 외부의 어떤 코드도 이런 일이 발생했다는 걸 알 수 없으므로 이를 **지역 변이** 라고 합니다.
 
 ## Side Effects를 일으킬 수 있는 경우
 
