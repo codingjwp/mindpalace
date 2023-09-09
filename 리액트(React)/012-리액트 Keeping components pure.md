@@ -145,4 +145,4 @@ event 핸들러가 컴포넌트 내부에 정의되어 있더라도 렌더링 �
 
 ⏮️ Previous: [Rendering Lists](./011-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Rendering%20lists.md)
 
-⏭️ Next: Adding Interactivity
+⏭️ Next: [Adding Interactivity](./013-리액트%20Adding%20Interactivity.md)
