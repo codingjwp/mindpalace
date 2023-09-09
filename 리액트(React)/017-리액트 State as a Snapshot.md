@@ -35,9 +35,9 @@ React에서는 이 스탭샷과 일치하도록 화면을 업데이트하고 이
 2. 함수가 새로운 JSX 스냅샷을 반환
 3. 그러면 React가 반환한 스냅샷과 일치하도록 화면을 업데이트
 
-![출처  [react 공식문서](https://react.dev/learn/state-as-a-snapshot)](State%20as%20a%20Snapshot%20536fc952a3e147e380c9033a56dafdce/Untitled.png)
+![출처 [react 공식문서](https://react.dev/learn/state-as-a-snapshot)](https://github.com/codingjwp/mindpalace/assets/113403155/42cb4b72-1063-4da3-bfea-697e6e642f56)
 
-출처  [react 공식문서](https://react.dev/learn/state-as-a-snapshot)
+출처 [react 공식문서](https://react.dev/learn/state-as-a-snapshot)
 
 컴포넌트 메모리로서 state는 함수가 반환된 후 사라지는 일반 변수와는 다름.
 
@@ -45,9 +45,9 @@ state는 실제로 함수 외부에 마치 선반에 있는 것 처럼 React 자
 
 React가 컴포넌트를 호출하면 특정 렌더링에 대한 state의 스탭샷을 제공. 컴포넌트는 **해당 렌더링의 state 값을 사용해** 계산된 새로운 props 세트와 이벤트 핸들러가 포함된 UI의 스냅샷을 JSX에 반환
 
-![출처  [react 공식문서](https://react.dev/learn/state-as-a-snapshot)](State%20as%20a%20Snapshot%20536fc952a3e147e380c9033a56dafdce/Untitled%201.png)
+![출처 [react 공식문서](https://react.dev/learn/state-as-a-snapshot)](https://github.com/codingjwp/mindpalace/assets/113403155/fd34dcb4-ffe9-4b69-b45f-2454f189c99e)
 
-출처  [react 공식문서](https://react.dev/learn/state-as-a-snapshot)
+출처 [react 공식문서](https://react.dev/learn/state-as-a-snapshot)
 
 아래 코드는 **+3 버튼** 클릭시 어떻게 작동할까?
 
