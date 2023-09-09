@@ -15,7 +15,8 @@ UI를 요청 하고 제공하는 세가지 단계
 2. 컴포넌트 렌더링
 3. DOM에 커밋
 
-![Untitled](Render%20and%20Commit%209fc0d1dfa89a497aaa6d0d454519bfc0/Untitled.png)
+![Ui 요청 세가지 단계](https://github.com/codingjwp/mindpalace/assets/113403155/825b3ee9-c49c-4b3b-b497-021b466c06bb)
+
 
 ## 스탭1: 렌더링을 촉발
 
@@ -32,7 +33,8 @@ UI를 요청 하고 제공하는 세가지 단계
 
 컴포넌트의 state를 업데이트하면 자동으로 렌더링 대기열에 추가.
 
-![Untitled](Render%20and%20Commit%209fc0d1dfa89a497aaa6d0d454519bfc0/Untitled%201.png)
+![업데이트 리렌더링 세가지 단계](https://github.com/codingjwp/mindpalace/assets/113403155/7b513519-5bba-463e-9437-ff3736d82698)
+
 
 ## 스탭2: React가 컴포넌트를 렌더링.
 
