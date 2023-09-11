@@ -9,9 +9,10 @@
 1. state를 부모 컴포넌트로 끌어올려 컴포넌트 끼리 공유하는 방법
 2. 제어 컴포넌트와 비제어 컴포넌트
 
-## 예조로 알아 보는 state 끌어 올리기
+## 예제로 알아 보는 state 끌어 올리기
 
-![Untitled](Sharing%20State%20Between%20Components%20fbf76508682348d488cde5e7d47b42ab/Untitled.png)
+<img width="860" alt="state 끌어올리기" src="https://github.com/codingjwp/mindpalace/assets/113403155/98d40ad4-80bb-404f-a924-708073e88793">
+
 
 하나의 `Panel`에 있는 `isActive` 버튼을 눌러도 다른 `Panel`에는 영향을 주지 않고 독립적으로 동작
 
@@ -72,7 +73,8 @@ const [activeIndex, setActiveIndex] = useState(0);
 
 ```
 
-![Untitled](Sharing%20State%20Between%20Components%20fbf76508682348d488cde5e7d47b42ab/Untitled%201.png)
+<img width="833" alt="state 끌어올리기 2" src="https://github.com/codingjwp/mindpalace/assets/113403155/e674dc14-d8a7-4e43-98ce-f4e329abc652">
+
 
 ### 제어 및 비제어 컴포넌트
 
