@@ -17,7 +17,8 @@ state는 컴포넌트 간에 격리. Reac는 UI 트리에서 어떤 컴포넌트
 
 React 또한 트리 구조를 사용하여 사용자가 만든 UI를 관리하고 모델링 함. React는 JSX로부터 UI 트리를 만들고 React Dom은 UI 트리와 일치하도록 브라우저 DOM 엘리먼트를 업데이트
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled.png)
+<img width="877" alt="UI 트리" src="https://github.com/codingjwp/mindpalace/assets/113403155/1c07554a-7436-4ad1-adf8-b56216c47e9d">
+
 
 ## state는 트리의 한 위치에 묶임
 
@@ -64,13 +65,15 @@ function Counter() {
 
 위 코드를 트리로 표시되는 모습은 다음과 같음
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%201.png)
+<img width="454" alt="코드 트리" src="https://github.com/codingjwp/mindpalace/assets/113403155/ce387168-58bc-4c57-bdf1-fe823306bd75">
+
 
 **카운터는 각 트리에서 고유한 위치에 렌더링되기 때문에 두 개의 개별 카운터 임.** 일반적으로 React를 사용하기 위해 이러한 위치에 대해 생각할 필요는 없지만, 작동 방식을 이해하는 것이 유용할 수 있음.
 
 counter 하나가 업데이트되면 해당 컴포넌트에 대한 state만 업데이트 됨.
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%202.png)
+<img width="503" alt="고유한 위치 렌더링" src="https://github.com/codingjwp/mindpalace/assets/113403155/447d3f2d-d2c6-42fe-b684-93f61edf088e">
+
 
 ```javascript
 import { useState } from 'react';
@@ -102,11 +105,12 @@ React는 **같은 컴포넌트를 같은 위치에 렌더링하는 한** 그 sta
 
 React가 컴포넌트를 제거하면 그 state가 사라지기 때문.
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%203.png)
+<img width="459" alt="컴포넌트 삭제" src="https://github.com/codingjwp/mindpalace/assets/113403155/145054a1-f39d-4e5f-8cfd-13a075b5d910">
+
 
 다시 체크박스를 선택하면 `Counter`와 state가 처음부터 초기화되고 `score=0`이 DOM에 추가됨
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%204.png)
+<img width="498" alt="컴포넌트 추가" src="https://github.com/codingjwp/mindpalace/assets/113403155/311ae767-34b2-4cac-8acc-d85310ca0c5e">
 
 React는 컴포넌트가 **UI 트리의 해당 위치에서 렌더링되는 동안** 컴포넌트의 state를 유지함.
 
@@ -126,7 +130,8 @@ React는 컴포넌트가 **UI 트리의 해당 위치에서 렌더링되는 동�
       )}
 ```
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%205.png)
+<img width="689" alt="state no reset 컴포넌트" src="https://github.com/codingjwp/mindpalace/assets/113403155/90733062-6c16-4771-a7a0-39b8e8b6e7e5">
+
 
 같은 위치에 있는 같은 컴포넌트이므로 React의 관점에서 보면 같은 `count`
 
@@ -153,13 +158,15 @@ state가 재설정될 것으로 예상할 수 있지만 그렇지 않음. 이 **
 
 같은 위치에서 서로 다른 컴포넌트 유형 사이를 전환합니다. `Counter` 컴포넌트가 있지만 `p` 를 넣을때 UI트리에서 `Counter` 제거하고 state를 소멸 시킴
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%206.png)
+<img width="828" alt="delete added 컴포넌트" src="https://github.com/codingjwp/mindpalace/assets/113403155/293aa6f3-1485-4681-914a-ed7b97404964">
+
 
 **같은 위치에 다른 컴포넌트를 렌더링하면 전체 하위 트리의 state가 재설정됩니다.**
 
 **Add one**  버튼 클릭 후  체크박스 체크시
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%207.png)
+<img width="805" alt="switch 컴포넌트" src="https://github.com/codingjwp/mindpalace/assets/113403155/14e56b79-4947-4cc2-b1c6-6782d76cd1a0">
+
 
 경험상 **리렌더링 사이에 state를 유지하려면 트리의 구조가 “일치”해야 함.** 구조가 다르면 React는 트리에서 컴포넌트를 제거할 때 state를 파괴하기 때문.
 
@@ -226,7 +233,8 @@ React는 컴포넌트가 같은 위치에 있는 동안 컴포넌트의 state를
 </div>
 ```
 
-![Untitled](Preserving%20and%20Resetting%20State%2054ff7587ae1e44f8b8a4601147c99be6/Untitled%208.png)
+<img width="933" alt="다른 위치 렌더링" src="https://github.com/codingjwp/mindpalace/assets/113403155/40f90d13-191e-49fc-9b2b-8938c853e6f8">
+
 
 각 state는 DOM에서 제거될 때 마다 소멸
 
