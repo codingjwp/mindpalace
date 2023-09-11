@@ -25,7 +25,7 @@
 
 props를 오로지 하위 컴포넌트로 전달하는 용도로만 쓰이는 컴포넌트를 거치면서 React Comoinnt트리의 한 부분에서 다른 부분으로 데이터를 전달하는 과정
 
-![Untitled](Passing%20Data%20Deeply%20with%20Context%20b3a424ec67df4d5ab0806dbb6df24e25/Untitled.png)
+![prop drilling](https://github.com/codingjwp/mindpalace/assets/113403155/a37ca16c-a0cb-43d7-aafe-263aad813610)
 
 ## Context: props 전달의 대안
 
@@ -61,7 +61,7 @@ props 만으론 부족하며 context가 중요한 역할을 함.
 
 context는 멀리 떨어져 있는 상위 트리라도 그안에 있는 전체 트리에 일부 데이터를 제공할 수 있게 해줌.
 
-![Untitled](Passing%20Data%20Deeply%20with%20Context%20b3a424ec67df4d5ab0806dbb6df24e25/Untitled%201.png)
+![context children](https://github.com/codingjwp/mindpalace/assets/113403155/19cd6a63-3ec7-44d1-9bb1-1ef8a4f3802c)
 
 ### 스탭 1: Context 만들기
 
