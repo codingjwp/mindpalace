@@ -191,4 +191,4 @@ function handleToggleMyList(id, nextSeen) {
 
 ⏮️ Previous: [Updateing Objects in State](./019-리액트%20Updating%20Objects%20in%20State.md)
 
-⏭️ Next: Managing State
+⏭️ Next: [Managing State](./021-리액트%20Managing%20State.md)
