@@ -138,7 +138,8 @@ React는 직접 UI를 즉 컴포넌트를 직접 활성화, 비활성화 하지 
 
 이 흐름을 시각화하는데 도움되도록 종이에 각 상태가 적힌 원 그리고 상태 사이의 변경사항을 화살표로 그리면 흐름을 파악할 수 있을 뿐 아니라 구현하기 훨씬 전에 버그를 분류할 수 있음
 
-![Untitled](Reacting%20to%20Input%20with%20State%2017284c9cfc17409f906577885805f412/Untitled.png)
+<img width="726" alt="state 설정으로 인한 UI 업데이트" src="https://github.com/codingjwp/mindpalace/assets/113403155/97bc2b88-0333-4dd8-860e-799f1c2a9bc0">
+
 
 ### 스탭 3: 메모리의 상태를 `useState`로 표현하기
 
