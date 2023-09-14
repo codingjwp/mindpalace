@@ -231,4 +231,4 @@ const dispatch = useTasksDispatch();
 
 ⏮️ Previous : [Passing Data Deeply with Context](./027-리액트%20Passing%20Data%20Deeply%20with%20Context.md)
 
-⏭️ Next : [Escape Hatches]()
+⏭️ Next : [Escape Hatches](./029-리액트%20Escape%20Hatches.md)
