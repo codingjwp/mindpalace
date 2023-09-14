@@ -100,6 +100,6 @@ Strict 모드에서 React는 각 업데이터 함수를 두 번 실행(두 번�
 1. `setEnabled(enabled ⇒ !enabled)` : 전체 staet 변수 이름 반복
 2. `setEnabled(prevEnabled ⇒ !prevEnabled)` : 접두가 prev를 사용
 
-⏮️ Previous: [State as a Snapshot](./017-리액트%20State%20as%20a%20Snapshotmd)
+⏮️ Previous: [State as a Snapshot](./017-리액트%20State%20as%20a%20Snapshot.md)
 
 ⏭️ Next: [Updating Objects in State](./019-리액트%20Updating%20Objects%20in%20State.md)
