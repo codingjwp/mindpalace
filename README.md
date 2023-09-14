@@ -2,7 +2,9 @@
 
 ## 공부용 자료
 
-📂 리액트(React) [이동](./%EB%A6%AC%EC%95%A1%ED%8A%B8(React)/000-%EB%A6%AC%EC%95%A1%ED%8A%B8%20Quick%20Start.md)  
+📂 리액트(React) 
+- 📂 학습 [이동](./리액트(React)/학습/000-리액트%20Quick%20Start.md)  
+- 📂 래퍼런스 
 
 📂 리코일(Recoil) [이동](./%EB%A6%AC%EC%BD%94%EC%9D%BC(Recoil)/00-%EC%A0%84%EC%97%AD%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC%20Recoil.md)  
 
