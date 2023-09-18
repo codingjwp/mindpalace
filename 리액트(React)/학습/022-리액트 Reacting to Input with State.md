@@ -258,4 +258,4 @@ function submitForm(answer) {
 
 ⏮️ Previous : [Managing State](./021-리액트%20Managing%20State.md)
 
-⏭️ Next : [Choosing the State Structure](./023-리액트%20Choosing%20the%20State%20Structuremd)
+⏭️ Next : [Choosing the State Structure](./023-리액트%20Choosing%20the%20State%20Structure.md)
