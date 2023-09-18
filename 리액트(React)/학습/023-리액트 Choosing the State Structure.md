@@ -139,7 +139,7 @@ const selectedItem = items.find(item =>
 
 `setItems`가 리렌더링을 촉발하고 `items.find(...)`가 업데이트된 제목의 항목을 찾기 때문. 선택한 ID만 필수적이므로 선택한 *항목*을 state로 유지할 필요가 없으며 나머지는 렌더링 중에 계산할 수 있습니다.
 
-## 깁게 중첩된 state는 피하기
+## 깊게 중첩된 state는 피하기
 
 **state가 너무 깊게 중첩되어 업데이트하기 어려운 경우 “flat”하게 만드는 것을 고려해보기.** 
 
