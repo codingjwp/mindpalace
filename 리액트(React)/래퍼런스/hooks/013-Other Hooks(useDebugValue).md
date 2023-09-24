@@ -45,7 +45,8 @@ function useOnlineStatus() {
 }
 ```
 
-![Untitled](Other%20Hooks(useDebugValue)%20e0381b37dd0140908e17c83f7bb1f313/Untitled.png)
+![react devtool](https://github.com/codingjwp/mindpalace/assets/113403155/961ecf72-1e39-4663-b211-37dd48cd0687)
+
 
 **모든 커스텀 훅에 디버그 값을 추가하지 마십시오. 공유 라이브러리의 일부이고 검사하기 어려운 복잡한 내부 데이터를 가진 커스텀 훅에 가장 유용합니다.**
 
