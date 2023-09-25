@@ -66,4 +66,4 @@ DOM 표준과 유사하게, React는 prop 이름에 `camelCase` 규칙을 사용
 
 📄 [**&lt;select&gt;**](./005-select.md)
 
-[**&lt;textarea&gt;**](./006-textarea.md)
+📄 [**&lt;textarea&gt;**](./006-textarea.md)
