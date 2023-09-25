@@ -8,6 +8,7 @@
 
 > 인프런 [정재남님](https://www.inflearn.com/users/46840/@jaenam)의 강의 내용 및 공식 문서 번역본 [react-ko.dev](https://react-ko.dev/)
 > 보면서 필요한 부분만 추가(뒤로 갈수록 거의 대부분 추가되어 버리네요..) 처음에 반말식으로 적었으나 점점 적기가 힘들어 변경, 마지막 코드 문제는 제외 하였습니다.
+> 이미지 출처 : react 공식 홈페이지
 
 📂 리코일(Recoil) [이동](./%EB%A6%AC%EC%BD%94%EC%9D%BC(Recoil)/00-%EC%A0%84%EC%97%AD%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC%20Recoil.md)  
 
