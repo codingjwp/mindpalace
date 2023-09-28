@@ -70,4 +70,4 @@ Next.js에는 여러 계층의 캐싱이 있으며, 따라서 캐시의 여러 �
 
 ⏪ Previous : [Next.js 프로젝트](./002-ProjectStructure.md)
 
-⏩ Next :  애플리케이션 구축
+⏩ Next :  [애플리케이션 구축](../애플리케이션구축/000-BuildingYourApplication.md)
