@@ -4,7 +4,8 @@
 
 문서 전체에서 이러한 용어가 사용되는 것을 볼 수 있습니다.
 
-![Untitled]()
+![Untitled](https://github.com/codingjwp/mindpalace/assets/113403155/7d5b09b2-eb43-49ac-99d4-1ab5eb241ef2)
+
 
 **Tree** : 계층 구조를 시각화하기 위한 규칙입니다. 예를 들어 부모 및 자식 컴포넌트가 있는 컴포넌트 트리, 폴더 구조 등이 있습니다.
 
@@ -14,7 +15,8 @@
 
 **Leaf** : 하위 트리의 노드 중 자식이 없는 노드입니다.
 
-![Untitled]()
+![Untitled 1](https://github.com/codingjwp/mindpalace/assets/113403155/80dc581e-ab8b-4923-b124-21cc8385f2d6)
+
 
 **URL 세그먼트** : 슬래시로 구분된 URL 경로의 일부입니다.
 **URL 경로** : 도메인 뒤에 오는 URL의 일부입니다.
@@ -35,7 +37,8 @@ version 13에서는 공유 레이아웃, 중첩 라우팅, 로딩 상태, 오류
 
 디렉터리 간 경로는 동일한 URL 경로로 확인되어서는 안 되며 충돌을 방지하기 위해 빌드 시간 오류가 발생합니다.
 
-![Untitled]()
+![Untitled 2](https://github.com/codingjwp/mindpalace/assets/113403155/2699a36f-1ef6-4135-a419-9d50ef03aa6d)
+
 
 기본적으로 앱 내부의 컴포넌트는 React 서버 컴포넌트입니다.
 
@@ -58,7 +61,7 @@ Next.js는 파일 시스템 기반 라우터를 사용합니다.
 
 경로의 각 폴더는 경로 세그먼트를 나타냅니다. 각 경로 세그먼트는 URL 경로의 해당 세그먼트에 매핑됩니다.
 
-![Untitled]()
+![Untitled 3](https://github.com/codingjwp/mindpalace/assets/113403155/774e53a2-8805-400f-b2a0-1c8890860bb2)
 
 ## 중첩된 경로
 
@@ -99,11 +102,11 @@ Next.js는 중첩된 경로에서 특정 동작을 하는 UI를 생성하기 위
 - `not-found.js` (리액트 Error boundary)
 - `page.js` 또는 중첩된 `layout.js`
 
-![Untitled]()
+![Untitled 4](https://github.com/codingjwp/mindpalace/assets/113403155/402f5abc-14da-4754-b77b-9b7cc9f088f7)
 
 중첩된 경로에서 세그먼트의 구성 요소는 상위 세그먼트의 구성 요소 안에 중첩됩니다.
 
-![Untitled]()
+![Untitled 5](https://github.com/codingjwp/mindpalace/assets/113403155/1f46147d-33d3-49fe-bf47-0d5b257060fd)
 
 ## 코로케이션
 
@@ -111,7 +114,7 @@ Next.js는 중첩된 경로에서 특정 동작을 하는 UI를 생성하기 위
 
 폴더가 경로를 정의하는 반면, `page.js` 또는 `route.js`가 반환하는 콘텐츠만 공개적으로 주소를 지정할 수 있기 때문입니다.
 
-![Untitled]()
+![Untitled 6](https://github.com/codingjwp/mindpalace/assets/113403155/6076c02b-a476-420b-97b7-4b5e033c4457)
 
 ## 고급 라우팅 패턴
 
@@ -132,9 +135,9 @@ Next.js는 중첩된 경로에서 특정 동작을 하는 UI를 생성하기 위
 
 이제 Next.js에서 라우팅의 기본 사항을 이해했으므로 아래 링크를 따라 첫 번째 경로를 생성하세요.
 
-📄 [경로 정의]()
+📄 [경로 정의](./001-경로정의.md)
 
-📄 [페이지 및 레이아웃]()
+📄 [페이지 및 레이아웃](./002-페이지및레이아웃.md)
 
 📄 [연결 및 탐색]()
 
