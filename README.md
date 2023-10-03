@@ -13,6 +13,7 @@
 📂 넥스트(Next.js)
  - 📂 시작하기 [이동](./넥스트(Nextjs)/시작하기/000-GettingStarted.md)
  - 📂 애플리케이션 구축 [이동](./넥스트(Nextjs)/애플리케이션구축/000-BuildingYourApplication.md)
+ - 📂 학습하기 [이동](./넥스트(Nextjs)/학습하기/000-Learn%20Nextjs%20Works.md)
 
 > 이미지 및 내용 출처 : Next.js 공식문서
 
