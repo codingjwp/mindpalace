@@ -2,7 +2,7 @@
 
 ## 참조
 
-### **`flushSync(callback)`**
+### `flushSync(callback)`
 
 `flushSync`를 호출하면 React가 보류 중이던 작업을 강제로 flush하고 DOM을 동기적으로 업데이트 합니다.
 

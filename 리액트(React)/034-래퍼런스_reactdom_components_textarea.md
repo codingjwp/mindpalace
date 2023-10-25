@@ -2,7 +2,7 @@
 
 ## 참조
 
-### **`<textarea>`**
+### `<textarea>`
 
 textarea을 표시하려면 [브라우저 빌트인 &lt;textarea&gt; 컴포넌트](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)를 렌더링 합니다.
 

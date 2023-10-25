@@ -126,7 +126,7 @@ function ChatRoom({ roomId /* travel */ }) {
 
 사용자는 UI에서 `travel`이 선택된 대화방임을 알 수 있습니다. 하지만 지난번에 실행된 Effect는 여전히  `general`대화방에 연결되어 있습니다.
 
-**`roomId` prop이 변경되었기 때문에 이전에 Effect(`general` 방에 연결)가 수행한 작업이 더 이상 UI와 일치하지 않습니다.**
+`roomId` prop이 변경되었기 때문에 이전에 Effect(`general` 방에 연결)가 수행한 작업이 더 이상 UI와 일치하지 않습니다.**
 
 이 시점에서 React가 두 가지 작업을 수행하기를 원합니다:
 
@@ -474,7 +474,7 @@ function ChatRoom({ roomId, selectedServerUrl }) {
 
 변이 가능한 값(전역 변수 포함)은 반응하지 않습니다.
 
-**`[location.pathname](https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname)`과 같은 변이 가능한 값은 의존성이 될 수 없습니다.**
+`[location.pathname](https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname)`과 같은 변이 가능한 값은 의존성이 될 수 없습니다.**
 
 이 값은 변이 가능하므로 React 렌더링 데이터 흐름 외부에서 언제든지 바뀔 수 있습니다.
 
@@ -484,7 +484,7 @@ function ChatRoom({ roomId, selectedServerUrl }) {
 
 `useSyncExternalStore`를 사용하여 외부 변경 가능한 값을 읽고 구독해야 합니다.
 
-**`ref.current`와 같이 변이 가능한 값 또는 이 값으로부터 읽은 것 역시 의존성이 될 수 없습니다.** `useRef`가 반환하는 ref 객체 자체는 의존성이 될 수 있지만, `current` 프로퍼티는 의도적으로 변이 가능합니다.
+`ref.current`와 같이 변이 가능한 값 또는 이 값으로부터 읽은 것 역시 의존성이 될 수 없습니다.** `useRef`가 반환하는 ref 객체 자체는 의존성이 될 수 있지만, `current` 프로퍼티는 의도적으로 변이 가능합니다.
 
 이를 통해 리렌더링을 촉발하지 않고도 무언가를 추적할 수 있습니다. 하지만 이를 변경하더라도 리렌더링을 촉발하지는 않기 때문에, 이는 반응형 값이 아니며, React는 이 값이 변경될 때 Effect를 다시 실행해야 할지 알 수 없습니다.
 

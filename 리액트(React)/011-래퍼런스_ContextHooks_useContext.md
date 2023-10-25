@@ -92,7 +92,7 @@ const ThemeContext = createContext(null);
 const ThemeContext = createContext('light');
 ```
 
-### ****트리 일부에 대한 context 재정의하기****
+### **트리 일부에 대한 context 재정의하기**
 
 필요한 만큼 provider들을 중첩하고 재정의할 수 있습니다.
 
@@ -106,7 +106,7 @@ const ThemeContext = createContext('light');
 </ThemeContext.Provider>
 ```
 
-### ****객체 및 함수 전달 시 리렌더링 최적화****
+### **객체 및 함수 전달 시 리렌더링 최적화**
 
 context 값이 JavaScript 객체, 함수로 프로퍼티를 가지면 리렌더링할 때마다 이것은 다른함수, 다른 객체가 될 것이므로 React는 `useContext(AuthContext)`를 호출하는 트리 깊숙한 곳의 모든 컴포넌트도  리렌더링해야 합니다.
 
@@ -136,7 +136,7 @@ return (
 
 ## 문제 해결
 
-### ****컴포넌트가 provider의 값을 인식하지 못합니다****
+### **컴포넌트가 provider의 값을 인식하지 못합니다**
 
 1. `<SomeContext.Provider>` 가 `useContext()`를 호출하는 컴포넌트 보다 위에 있어야합니다.
 2. `<SomeContext.Provider>` 를 감싸는 것을 잊었는지 확인하세요. React Devtool를 사용하면 편합니다.

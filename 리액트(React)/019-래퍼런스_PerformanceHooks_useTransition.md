@@ -10,7 +10,7 @@ const [isPending, startTransition] = useTransition()
 
 ## 참조
 
-### **`useTransition()`**
+### `useTransition()`
 
 컴포넌트의 최상위 레벨에서 `useTransition`을 호출하여 일부 state 업데이트를 트랜지션으로 표시합니다.
 
@@ -32,7 +32,7 @@ function TabContainer() {
 - 보류 중인 트랜지션이 있는지 여부를 알려주는 `isPending` 플래그
 - state 업데이트를 트랜지션으로 표시할 수 있는 `startTransition` 함수
 
-### **`startTransition` function**
+### `startTransition` function**
 
 `useTransition`이 반환하는 `startTransition` 함수를 사용하면 state 업데이트를 트랜지션으로 표시할 수 있습니다
 

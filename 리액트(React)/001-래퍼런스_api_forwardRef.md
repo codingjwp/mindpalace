@@ -8,7 +8,7 @@ const SomeComponent = forwardRef(render)
 
 ## 참조
 
-### **`forwardRef(render)`**
+### `forwardRef(render)`
 
 컴포넌트가 `ref`를 받아 자식 컴포넌트로 전달하도록 하려면 `forwardRef()`를 호출하세요.
 
@@ -28,7 +28,7 @@ const MyInput = forwardRef(function MyInput(props, ref) {
 
 - `forwardRef` : JSX에서 렌더링할 수 있는 React 컴포넌트를 반환합니다. 일반 함수로 정의된 React 컴포넌트와 달리, `forwardRef`가 반환하는 컴포넌트는 `ref` prop을 받을 수도 있습니다.
 
-## **`render` 함수**
+## `render` 함수**
 
 `forwardRef`는 렌더링 함수를 인자로 받습니다. React는 `props` 및 `ref`와 함께 이 함수를 호출합니다
 

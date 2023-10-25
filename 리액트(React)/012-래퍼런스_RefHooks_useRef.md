@@ -98,7 +98,7 @@ const playerRef = useRef(null);
 
 ## 해결 방법
 
-### ****커스텀 컴포넌트에 대한 ref를 얻을 수 없습니다****
+### **커스텀 컴포넌트에 대한 ref를 얻을 수 없습니다**
 
 ```typescript
 const inputRef = useRef(null);

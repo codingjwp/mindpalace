@@ -219,7 +219,7 @@ function Profile({ userId }) {
 
 일반적으로 React는 같은 컴포넌트가 같은 위치에서 렌더링될 때 state를 유지합니다.
 
-**`userId`를 `key`로 `Profile` 컴포넌트에 전달하는 것은 곧, `userId`가 다른 두 `Profile` 컴포넌트를 state를 공유하지 않는 별개의 컴포넌트들로 취급하도록 React에게 요청하는 것입니다.**
+`userId`를 `key`로 `Profile` 컴포넌트에 전달하는 것은 곧, `userId`가 다른 두 `Profile` 컴포넌트를 state를 공유하지 않는 별개의 컴포넌트들로 취급하도록 React에게 요청하는 것입니다.**
 
 React는 `userId`로 설정한 `key`가 변경될 때마다 DOM을 다시 생성하고 state를 재설정하며, `Profile` 컴포넌트 및 모든 자식들의 state를 재설정할 것입니다.
 

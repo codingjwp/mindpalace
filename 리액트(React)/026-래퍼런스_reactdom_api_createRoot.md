@@ -2,7 +2,7 @@
 
 ## 참조
 
-### **`createRoot(domNode, options?)`**
+### `createRoot(domNode, options?)`
 
 `createRoot`를 호출하면 브라우저 DOM 엘리먼트 안에 콘텐츠를 표시할 수 있는 React 루트를 생성합니다.
 
@@ -40,11 +40,11 @@ root.render(<App />);
 - 앱에 `createRoot` 호출이 오직 하나만 있을 가능성이 높습니다. 프레임워크를 사용하는 경우 프레임워크가 이 호출을 대신 수행할 수도 있습니다.
 - 컴포넌트의 자식이 아닌 DOM 트리의 다른 부분(예: 모달 또는 툴팁)에 JSX 조각을 렌더링하려는 경우, `createRoot` 대신 `createPortal`을 사용하세요.
 
-### **`root.render(reactNode)`**
+### `root.render(reactNode)`
 
 `root.render`를 호출하여 JSX 조각(“React 노드”)을 React 루트의 브라우저 DOM 노드에 표시합니다.
 
-### **`root.unmount()`**
+### `root.unmount()`
 
 `root.unmount`를 호출하면 React 루트 내부에서 렌더링된 트리를 삭제합니다.
 

@@ -2,7 +2,7 @@
 
 ## 참조
 
-### **`<select>`**
+### `<select>`
 
 [브라우저 빌트인 &lt;select&gt; 컴포넌트](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)로 옵션들과 함께 셀렉트 박스를 렌더링할 수 있습니다.
 

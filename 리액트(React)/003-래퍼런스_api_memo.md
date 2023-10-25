@@ -8,7 +8,7 @@ const MemoizedComponent = memo(SomeComponent, arePropsEqual?)
 
 ## 참조
 
-### **`memo(Component, arePropsEqual?)`**
+### `memo(Component, arePropsEqual?)`
 
 `memo`로 컴포넌트를 감싸 **memoized** 버전의 컴포넌트를 얻을 수 있습니다.
 
@@ -45,7 +45,7 @@ export default Greeting;
 
 props, state 및 context가 변경되지 않으면 항상 동일한 출력을 반환해야 함을 의미합니다.
 
-**`memo`는 성능 최적화를 위해서만 사용해야 합니다.** `memo` 없이 코드가 작동하지 않으면 먼저 근본적인 문제를 찾아 해결하세요.
+`memo`는 성능 최적화를 위해서만 사용해야 합니다.** `memo` 없이 코드가 작동하지 않으면 먼저 근본적인 문제를 찾아 해결하세요.
 
 ### **context를 사용하여 메모화된 컴포넌트 업데이트하기**
 

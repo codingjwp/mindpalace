@@ -94,7 +94,7 @@ export default function Heading({children}) {
 }
 ```
 
-**`useContext`는 React에게 `Heading` 컴포넌트가 `LevelContext`를 읽기를 원한다고 알려줌.**
+`useContext`는 React에게 `Heading` 컴포넌트가 `LevelContext`를 읽기를 원한다고 알려줌.**
 
 context를 제공하지 않으면 React는 이전 단계에서 지정한 기본 값을 사용.
 

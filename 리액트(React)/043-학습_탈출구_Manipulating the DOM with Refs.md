@@ -58,7 +58,7 @@ state와 유사하게 ref는 렌더링 사이에 유지되며 ref는 state 변�
 
 이 문제를 해결할 수 있는 방법 중 하나는 부모 엘리먼트에 대해 단일 ref를 가져온 다음 **querySelectorAll과 같은 DOM 조작 메서드를 사용하여 개별 하위 노드를 찾는 것**. 하지만 이 방법은 DOM 구조가 변경되면 깨질 수 있음.
 
-또 다른 해결책은 **`ref` 속성에 함수를 전달**하는 것. 이를 `ref` 콜백이라고 합니다. React는 ref를 설정할 때가 되면 DOM 노드로, 지울 때가 되면 `null`로 ref 콜백을 호출. 이를 통해 자신만의 배열이나 [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)을 유지 관리하고, 인덱스나 일종의 ID로 모든 ref에 접근할 수 있음.
+또 다른 해결책은 `ref` 속성에 함수를 전달**하는 것. 이를 `ref` 콜백이라고 합니다. React는 ref를 설정할 때가 되면 DOM 노드로, 지울 때가 되면 `null`로 ref 콜백을 호출. 이를 통해 자신만의 배열이나 [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)을 유지 관리하고, 인덱스나 일종의 ID로 모든 ref에 접근할 수 있음.
 
 ```typescript
 import { useRef } from 'react';

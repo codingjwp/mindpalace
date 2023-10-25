@@ -154,7 +154,7 @@ function TodoList({ username }) {
 
 ## 문제해결
 
-### ****dispatch하면 reducer state의 일부분이 undefined가 됩니다****
+### **dispatch하면 reducer state의 일부분이 undefined가 됩니다**
 
 새 state를 반환할 때 모든 `case` 브랜치가 **기존 필드를 모두 복사하는지** 확인하세요.
 

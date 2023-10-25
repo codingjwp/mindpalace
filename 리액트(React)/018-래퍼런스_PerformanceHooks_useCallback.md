@@ -10,7 +10,7 @@ const cachedFn = useCallback(fn, dependencies)
 
 ## 참조
 
-### **`useCallback(fn, dependencies)`**
+### `useCallback(fn, dependencies)`
 
 최상위 컴포넌트에서 `useCallback`을 호출하여 리렌더링 사이에 함수 정의를 캐시합니다.
 
@@ -57,7 +57,7 @@ const ShippingForm = memo(function ShippingForm({ onSubmit }) {
 });
 ```
 
-**`handleSubmit`을 `useCallback`으로 감싸면, 리렌더링 사이에 동일한 함수가 되도록 할 수 있습니다.**
+`handleSubmit`을 `useCallback`으로 감싸면, 리렌더링 사이에 동일한 함수가 되도록 할 수 있습니다.**
 
 ```typescript
 // 리렌더링 사이에 함수를 캐싱하도록 지시합니다...
@@ -69,14 +69,14 @@ const ShippingForm = memo(function ShippingForm({ onSubmit }) {
   }, [productId, referrer]); // ...따라서 이 의존성이 변경되지 않는 한...
 ```
 
-### ****useCallback과 useMemo는 무슨 관련이 있을까요?****
+### **useCallback과 useMemo는 무슨 관련이 있을까요?**
 
 차이점은 캐시할 수 있는 항목에 있습니다
 
-- **`useMemo`는 호출한 함수의 결과를 캐시합니다.**
-- **`useCallback`은 함수 자체를 캐시합니다**
+- `useMemo`는 호출한 함수의 결과를 캐시합니다.**
+- `useCallback`은 함수 자체를 캐시합니다**
 
-### ****useCallback을 모든 곳에 추가해야 하나요?****
+### **useCallback을 모든 곳에 추가해야 하나요?**
 
 `useCallback`으로 함수를 캐싱하는 것은 몇 가지 경우에만 유용합니다.
 

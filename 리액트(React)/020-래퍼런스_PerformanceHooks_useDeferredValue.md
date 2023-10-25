@@ -10,7 +10,7 @@ const deferredValue = useDeferredValue(value)
 
 ## 참조
 
-### **`useDeferredValue(value)`**
+### `useDeferredValue(value)`
 
 컴포넌트의 최상위 레벨에서 `useDeferredValue`를 호출하여 지연된 버전의 값을 가져옵니다.
 

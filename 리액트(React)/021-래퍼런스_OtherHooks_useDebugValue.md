@@ -10,7 +10,7 @@ useDebugValue(value, format?)
 
 ## 참조
 
-### **`useDebugValue(value, format?)`**
+### `useDebugValue(value, format?)`
 
 읽을 수 있는 디버그 값을 표시하려면 **커스텀 훅**의 최상위 레벨에서 `useDebugValue`을 호출합니다.
 

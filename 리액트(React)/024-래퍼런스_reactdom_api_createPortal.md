@@ -2,7 +2,7 @@
 
 ## 참조
 
-**`createPortal(children, domNode, key?)`**
+`createPortal(children, domNode, key?)`
 
 포털을 생성하려면 `createPortal`을 호출하여 몇 가지 JSX와 렌더링할 DOM 노드를 전달하세요
 

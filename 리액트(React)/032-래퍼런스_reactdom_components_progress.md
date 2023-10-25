@@ -2,7 +2,7 @@
 
 ## 참조
 
-### **`<progress>`**
+### `<progress>`
 
 진행률 표시기를 렌더링하려면 [브라우저 빌트인 &lt;progress&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress) 컴포넌트를 렌더링합니다.
 

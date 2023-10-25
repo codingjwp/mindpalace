@@ -71,7 +71,7 @@ const MyInput = forwardRef(function MyInput(props, ref) {
 });
 ```
 
-### ****사용자 정의 명령 노출****
+### **사용자 정의 명령 노출**
 
 `imperative handle`을 통해 노출하는 메서드는 DOM 메서드와 정확하게 일치할 필요가 없습니다
 

@@ -53,7 +53,7 @@ const [isSent, setIsSent] = useState(false);
 
 `setIsSent`와 `setIsSending` 중 하나만 호출 하면 `isSending`과 `isSent`가 동시에 `true` 가 되는 상황
 
-**`isSending`과 `isSent`는 동시에 `true`가 되어서는 안되므로, 세 가지 유효한 state 중 하나를 취할 수 있는 `status` 라는 state변수 하나로 대체해야 함.** `status`는 `typing`(초기값), `sending`, `sent`
+`isSending`과 `isSent`는 동시에 `true`가 되어서는 안되므로, 세 가지 유효한 state 중 하나를 취할 수 있는 `status` 라는 state변수 하나로 대체해야 함.** `status`는 `typing`(초기값), `sending`, `sent`
 
 ```javascript
 const [text, setText] = useState('');
@@ -124,7 +124,7 @@ export default function Menu() {
 } 
 ```
 
-`**selectedItem`의 내용이 `items` 목록 내 항목 중 하나와 동일한 객체,** 즉 항목 자체에 대한 정보가 두 곳에서 중복
+`selectedItem`의 내용이 `items` 목록 내 항목 중 하나와 동일한 객체,** 즉 항목 자체에 대한 정보가 두 곳에서 중복
 
 변경 내용 
 

@@ -2,7 +2,7 @@
 
 ## 참조
 
-### **`hydrateRoot(domNode, reactNode, options?)`**
+### `hydrateRoot(domNode, reactNode, options?)`
 
 `hydrateRoot`를 호출하여 서버 환경에서 React가 이미 만들어둔 HTML에 React를 붙입니다.
 

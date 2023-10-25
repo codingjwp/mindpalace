@@ -8,7 +8,7 @@ const SomeComponent = lazy(load)
 
 ## 참조
 
-### **`lazy(load)`**
+### `lazy(load)`
 
 컴포넌트 외부에서 `lazy`를 호출하여 지연 로드된 React 컴포넌트를 선언합니다.
 
@@ -57,7 +57,7 @@ const MarkdownPreview = lazy(() => import('./MarkdownPreview.js'));
 
 ## 문제 해결
 
-### **`lazy` 컴포넌트의 상태가 예기치 않게 초기화 됩니다**
+### `lazy` 컴포넌트의 상태가 예기치 않게 초기화 됩니다**
 
 아래 코드는 실행이 되긴하지만 `lazy`를 컴포넌트 안에 선언하지마세요.
 

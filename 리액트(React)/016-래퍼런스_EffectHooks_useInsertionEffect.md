@@ -14,7 +14,7 @@ CSS-in-JS 라이브러리에서 작업 중에 스타일을 주입하고자 하�
 
 ## 참조
 
-### **`useInsertionEffect(setup, dependencies?)`**
+### **`useInsertionEffect(setup, dependencies?)`
 
 `useInsertionEffect`를 호출하여 DOM 변이 전에 스타일을 주입합니다.
 

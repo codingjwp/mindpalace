@@ -100,7 +100,7 @@ const tasks = useContext(TasksContext);
 const dispatch = useContext(TasksDispatchContext)
 ```
 
-**`TaskBoard` 컴포넌트는 자식 컴포넌트에, `TaskList`는 `Task` 컴포넌트에 이벤트 핸들러를 전달하지 않음.**
+`TaskBoard` 컴포넌트는 자식 컴포넌트에, `TaskList`는 `Task` 컴포넌트에 이벤트 핸들러를 전달하지 않음.**
 
 ```javascript
 import { useState, useContext } from 'react';

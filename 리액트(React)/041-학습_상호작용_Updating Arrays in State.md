@@ -131,7 +131,7 @@ nextList[0].seen = true; // Problem: mutates list[0]
 setList(nextList);
 ```
 
-`nextList` 와 `list`는 서로 다른 배열이지만 `**nextList[0]**`과 `**list[0]**`은 같은 객체를 가리킴.
+`nextList` 와 `list`는 서로 다른 배열이지만 `nextList[0]`과 `list[0]`은 같은 객체를 가리킴.
 
 이것은 state를 변이하므로 피해야함. 중첩된 Javascript 객체 업데이트와 비슷한 방법으로 이 문제를 해결할 수 있는데, 변경하려는 개별 항목 변이하는 대신 복사하는 것.
 
@@ -152,7 +152,7 @@ function handleToggleMyList(artworkId, nextSeen) {
 
 따라서`artwork.seen`을 변경하면 원본 작품 항목이 변경됨.
 
-그러므로 **`map`을 사용하여 이전 항목에 대한 변이 없이 업데이트된 버전으로 대체할 수 있습니다.**
+그러므로 `map`을 사용하여 이전 항목에 대한 변이 없이 업데이트된 버전으로 대체할 수 있습니다.**
 
 ```javascript
 function handleToggleMyList(artworkId, nextSeen) {

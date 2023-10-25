@@ -8,7 +8,7 @@
 
 ## **참조**
 
-### **`<input>`**
+### `<input>`
 
 input을 표시하려면 [브라우저 빌트인 `<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) 컴포넌트를 렌더링 하세요.
 

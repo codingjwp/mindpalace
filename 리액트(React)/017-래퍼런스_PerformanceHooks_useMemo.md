@@ -10,7 +10,7 @@ const cachedValue = useMemo(calculateValue, dependencies)
 
 ## 참조
 
-### **`useMemo(calculateValue, dependencies)`**
+### `useMemo(calculateValue, dependencies)`
 
 컴포넌트 최상단에서 `useMemo`를 호출하여 리렌더링 사이의 계산 결과를 캐시합니다.
 
@@ -108,7 +108,7 @@ const List = memo(function List({ items }) {
 });
 ```
 
-이 변경으로 인해 **`List`는 모든 prop이 이전 렌더링과 같은 경우에는 리렌더링을 건너뛸 것입니다.**
+이 변경으로 인해 `List`는 모든 prop이 이전 렌더링과 같은 경우에는 리렌더링을 건너뛸 것입니다.**
 
 ```typescript
 export default function TodoList({ todos, tab, theme }) {
@@ -141,7 +141,7 @@ export default function TodoList({ todos, tab, theme }) {
 }
 ```
 
-**`visibleTodos` 계산을 `useMemo`로 감싸면, 리렌더링 사이에 동일한 값이 보장됩니다.**
+`visibleTodos` 계산을 `useMemo`로 감싸면, 리렌더링 사이에 동일한 값이 보장됩니다.**
 
 ### **개별 JSX 노드 메모화**
 

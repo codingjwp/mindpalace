@@ -8,7 +8,7 @@ const SomeContext = createContext(defaultValue)
 
 ## 참조
 
-### **`createContext(defaultValue)`**
+### `createContext(defaultValue)`
 
 컴포넌트 외부에서 `createContext`를 호출하여 컨텍스트를 생성하세요.
 
@@ -30,7 +30,7 @@ const ThemeContext = createContext('light');
     - `SomeContext.Provider`를 사용하면 컴포넌트에 컨텍스트 값을 제공할 수 있습니다.
     - `SomeContext.Consumer` 는 컨텍스트 값을 읽는 또다른 방법이며 거의 사용되지 않습니다.
 
-### **`SomeContext.Provider`**
+### `SomeContext.Provider`
 
 컴포넌트를 컨텍스트 provider로 감싸 내부의 모든 컴포넌트에 대한 이 컨텍스트의 값을 지정하세요
 
@@ -49,7 +49,7 @@ function App() {
 
 - `value` : 이 값은 해당 provider 내에서 이 컨텍스트를 읽는 모든 컴포넌트에 전달하려는 값으로, 깊이에 상관없이 전달할 수 있습니다
 
-### **`SomeContext.Consumer`**
+### `SomeContext.Consumer`
 
 `useContext` 이전에는 컨텍스트를 읽는 오래된 방법이 있었습니다
 

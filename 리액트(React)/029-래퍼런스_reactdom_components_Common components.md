@@ -21,7 +21,7 @@
 - `suppressHydrationWarning`: 불리언. 서버 렌더링을 사용하는 경우 일반적으로 서버와 클라이언트가 서로 다른 콘텐츠를 렌더링할 때 경고가 표시됩니다. 타임스탬프와 같은 일부 드문 경우에서는 정확한 일치를 보장하기가 매우 어렵거나 불가능합니다. `suppressHydrationWarning`을 `true`로 설정하면 React는 해당 엘리먼트의 속성과 콘텐츠가 일치하지 않을 때 경고하지 않습니다. 이는 한 단계 깊이에서만 작동하며, 탈출구로 사용하기 위한 것입니다. 과도하게 사용하지 마세요.
 - `style`: CSS 스타일이 있는 객체(예: `{ fontWeight: 'bold', margin: 20 }`). DOM [style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) 프로퍼티와 마찬가지로 CSS 프로퍼티 이름도`font-weight` 대신 `fontWeight`와 같이 `camelCase`로 작성해야 합니다. 문자열이나 숫자를 값으로 전달할 수 있습니다. `width: 100`과 같이 숫자를 전달하면 React는 단위가 없는 프로퍼티가 아니라면 값에 자동으로 `px`(“픽셀”)를 추가합니다. 스타일 값을 미리 알 수 없는 동적 스타일에만 `style`을 사용하는 것을 권장합니다. 그 외의 경우에는 `className`과 함께 일반 CSS 클래스를 적용하는 것이 더 효율적입니다.
 
-### **`ref` 콜백 함수**
+### `ref` 콜백 함수**
 
 ref 객체(예: `useRef`에서 반환하는 객체) 대신 `ref` 속성에 함수를 전달할 수 있습니다.
 
@@ -64,7 +64,7 @@ ref 객체(예: `useRef`에서 반환하는 객체) 대신 `ref` 속성에 함�
 - persist(): React DOM에서는 사용되지 않습니다. React Native에서는 이벤트 이후 이벤트의 프로퍼티를 읽으려면 이 함수를 호출합니다.
 - `isPersistent()`: React DOM에서는 사용되지 않습니다. React Native에서는 `persist`가 호출되었는지 여부를 반환합니다.
 
-### **`ClipboardEvent` 핸들러 함수**
+### `ClipboardEvent` 핸들러 함수**
 
 [Clipboard API](https://developer.mozilla.org/ko/docs/Web/API/Clipboard_API) 이벤트에 대한 이벤트 핸들러 유형입니다.
 

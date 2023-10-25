@@ -8,7 +8,7 @@ startTransition(scope)
 
 ## 참조
 
-### **`startTransition(scope)`**
+### `startTransition(scope)`
 
 `startTransition` 함수를 사용하면 state 업데이트를 트랜지션으로 표시할 수 있습니다.
 

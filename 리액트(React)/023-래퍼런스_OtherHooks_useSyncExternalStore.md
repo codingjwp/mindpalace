@@ -10,7 +10,7 @@ const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot?
 
 ## 참조
 
-### **`useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot?)`**
+### `useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot?)`
 
 컴포넌트의 최상위 레벨에서 `useSyncExternalStore`를 호출하여 외부 데이터 저장소에서 값을 읽습니다.
 

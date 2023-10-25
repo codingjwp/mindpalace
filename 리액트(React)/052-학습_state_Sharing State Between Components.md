@@ -88,7 +88,7 @@ const [activeIndex, setActiveIndex] = useState(0);
 
 컴포넌트를 작성할 때는 (props를 통해) 컴포넌트에서 어떤 정보를 제어해야 하는지, (state를 통해) 어떤 정보를 제어하지 않아야 하는지 고려.
 
-## ****각 state의 단일 진실 공급원(SSOT)****
+## **각 state의 단일 진실 공급원(SSOT)**
 
 많은 컴포넌트는 고유한 state를 가지고 있으며. 일부 state는 입력값과 같이 leaf 컴포넌트(트리의 맨 아래에 있는 컴포넌트)에 가깝게 위치하며 다른 state는 상단에 더 가깝게 위치 할 수 있습니다.
 

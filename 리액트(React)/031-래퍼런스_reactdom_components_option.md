@@ -2,7 +2,7 @@
 
 ## 참조
 
-### **`<option>`**
+### `<option>`
 
 [브라우저 빌트인 `<option>` 컴포넌트](https://developer.mozilla.org/ko/docs/Web/HTML/Element/option)를 사용하면 [&lt;select&gt;](https://react-ko.dev/reference/react-dom/components/select) 박스 안에 옵션을 렌더링할 수 있습니다.
 

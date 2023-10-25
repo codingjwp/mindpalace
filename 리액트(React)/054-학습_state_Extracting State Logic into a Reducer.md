@@ -78,7 +78,7 @@ const initialTasks = [
 
 컴포넌트가 커질수록 흩어져 있는 state 로직의 양도 늘어나며 복잡성을 줄이고 모든 로직을 접근하기 쉽게 한 곳에 모을려면 state 로직을 컴포넌트 외부의 **reducer**라고 하는 단일 함수로 옮길 수 있음.
 
-**Reducer**은 state를 관리하는 다른 방법이며 **`useState`**에서 **`useReducer`**로 마이그레이션 하는 방법은 세 단계로 진행
+**Reducer**은 state를 관리하는 다른 방법이며 `useState`에서 `useReducer`로 마이그레이션 하는 방법은 세 단계로 진행
 
 1. state를 설정하는 것에서 action들을 전달하는 것으로 변경
 2. reducer 함수 작성
