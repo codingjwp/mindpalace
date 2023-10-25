@@ -2,11 +2,11 @@
 
 ## **DOM**
 
-***Document Object Model***
+**Document Object Model**
 스크립트 언어로 html를 제어할 수 있도록 웹 문서를 객체화 한것.  
 
 하나의 부모태그와 n개의 자식태그를 가지며 이러한 구조를 표시하면 tree 구조를 가집니다.  
-이러한 것을 ***Dom Tree***라고 하며 각각의 요소를 ***Node***라고 합니다.  
+이러한 것을 **Dom Tree**라고 하며 각각의 요소를 **Node**라고 합니다.  
 
 ```html
 <div>
@@ -19,7 +19,7 @@
 
 ## **BOM**
 
-***Browser Object Model***(브라우저 객체 모델)  
+**Browser Object Model**(브라우저 객체 모델)  
 브라우저를 스크립터로 제어하기 위한 모델  
 `window` : 모든 객체가 소속된 객체, 브라우저 창  
 `document` : 현재 문서의 정보를 가지는 객체.  
