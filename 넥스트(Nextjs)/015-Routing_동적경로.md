@@ -73,7 +73,7 @@ export async function generateStaticParams() {
 
 `app/shop/[[...slug]]/page.js`, `/shop` `/shop/clothes`, `/shop/clothes/tops`, `/shop/clothes/tops/t-shirts`
 
-**Catch-all Segments**와 **Optional Catch-all Segments**의 차이점은 **Optional Catch-all Segments**를 사용하면 매개 변수가 없는 경로(`/shop`**)**도 일치한다는 점입니다. 
+**Catch-all Segments**와 **Optional Catch-all Segments**의 차이점은 **Optional Catch-all Segments**를 사용하면 매개 변수가 없는 경로(`/shop`)도 일치한다는 점입니다. 
 
 | Route | Example URL | params |
 | --- | --- | --- |
