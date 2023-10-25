@@ -11,9 +11,9 @@
 ```
 Key Press 이벤트 발생시 일어나는 코드 입니다. 
 
-- `ArrowUp`, `ArrowDown` 키가 눌러졌을 시 `SearchDetail`가 존재하는 경우 ***0 ~ 4*** 위치에 해당하는 색상을 변경합니다.
-- `Enter` 키가 눌러졌을 시 `SearchDetail`에 detailIndex 값이 ***0 ~ 4*** 일 경우 그 해당 한글값을 `input(SearchBar)`에 입력을 넣어 줍니다.
-- ***0 ~ 4***가 아닌 경우 첫 번째 목록 값으로 조회하도록 하였습니다.
+- `ArrowUp`, `ArrowDown` 키가 눌러졌을 시 `SearchDetail`가 존재하는 경우 **0 ~ 4** 위치에 해당하는 색상을 변경합니다.
+- `Enter` 키가 눌러졌을 시 `SearchDetail`에 detailIndex 값이 **0 ~ 4** 일 경우 그 해당 한글값을 `input(SearchBar)`에 입력을 넣어 줍니다.
+- **0 ~ 4**가 아닌 경우 첫 번째 목록 값으로 조회하도록 하였습니다.
 
 ```typescript
   const hasSearchDetailIndex = (e: KeyboardEvent) => {
@@ -94,7 +94,7 @@ export const searchListState = selector<PokemonListProps[]>({
 });
 ```
 
-위 코드를 작성하고 난 후 이런 생각을 하게된 계기는 `pokemondb` 페이지로 간 다음 뒤로가기 하면 `input`에 ***값이 그대로 남아 있는 현상***을 보고 리코일이 전역상태관리로 인해 초기화를 할 곳을 어디에 둬야할지 몰라서 였습니다.
+위 코드를 작성하고 난 후 이런 생각을 하게된 계기는 `pokemondb` 페이지로 간 다음 뒤로가기 하면 `input`에 **값이 그대로 남아 있는 현상**을 보고 리코일이 전역상태관리로 인해 초기화를 할 곳을 어디에 둬야할지 몰라서 였습니다.
 
 리코일에도 초기화 할 수 있는 훅은 `useResetRecoilState(state)`이 존재 했지만 리셋을 반환하는 함수를 쓸만한 곳이 보이지 않았습니다.
 

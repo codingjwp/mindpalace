@@ -17,7 +17,7 @@ number,name,form,type1,type2,hp,attack,defense,spattack,spdefense,speed
 
 ## UUID를 키로 삼자
 
-이부분은 별로 중요하지 않아서 자세한 내용은 쓰지 않겠으나 사용한 부분은 **`uuid`**랑 **`with open`**을 사용한 읽기용 쓰기용 을 두개 나누어 uuid를 추가한 내용을 글을 새로운 csv파일로 생성하였다.
+이부분은 별로 중요하지 않아서 자세한 내용은 쓰지 않겠으나 사용한 부분은 `uuid`랑 `with open`을 사용한 읽기용 쓰기용 을 두개 나누어 uuid를 추가한 내용을 글을 새로운 csv파일로 생성하였다.
 
 ```python
 import uuid

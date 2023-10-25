@@ -20,8 +20,8 @@ const searchTextState = atom<string>({
 ### **selector 코드**
 
 selector로 async 코드를 작성하여 pokemonlist 값을 가져오도록 작성.  
-***fetch***의 조건은 한글또는 영어로 입력시 찾으며 최대 5개 까지로 제한.  
-***`replace(/['+-_: ]+/g, "").toLowerCase()`***으로 띄어쓰기 몇 가지 특수문자를 제외 입력.
+**fetch**의 조건은 한글또는 영어로 입력시 찾으며 최대 5개 까지로 제한.  
+`replace(/['+-_: ]+/g, "").toLowerCase()`으로 띄어쓰기 몇 가지 특수문자를 제외 입력.
  
 ```typescript
 export const searchListState = selector<PokemonListProps[]>({
