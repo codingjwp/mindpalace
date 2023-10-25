@@ -2,7 +2,7 @@
 
 ## **쓰기가 가능한 selector**
 
-***양방향 selector***은 들어오는 값을 매개변수로 수신하고 이를 사용하여 데이터흐름 그래프에 따라 변경사항을 [업스트림](#업스트림upstream)으로 전파할 수 있습니다.
+**양방향 selector**은 들어오는 값을 매개변수로 수신하고 이를 사용하여 데이터흐름 그래프에 따라 변경사항을 [업스트림](#업스트림upstream)으로 전파할 수 있습니다.
 
 사용자는 selector를 새 값으로 설정하거나 selecotr을 재설정 할 수 있으므로 수신되는 값은 selector가 나타내는 것과 **동일한 유형**이거나 재설정 작업을 나태내는 **DefaultValue 객체**입니다.
 
@@ -66,7 +66,7 @@ const stateC = selector({
 
 #### **DefaultValue**
 
-- ***DefaultValue***는 Recoil에서 제공하는 ***특별한 타입의 객체***입니다. 이것은 ***상태를 기본값***으로 되돌리고 싶을때 사용하는 특별한 신호 같은 것 입니다.
+- **DefaultValue**는 Recoil에서 제공하는 **특별한 타입의 객체**입니다. 이것은 **상태를 기본값**으로 되돌리고 싶을때 사용하는 특별한 신호 같은 것 입니다.
 
 ```typescript
 import { DefalutValue } from 'recoil';
