@@ -10,13 +10,13 @@
 
 ### 해당 라이브러리로 선택한 이유
 
-1. **`Vitest`**
+1. `Vitest`
     - Jest가 테스트의 공식으로 자리 잡고 있으나 Jest 공식 문서 상 Jest는 vite에서 완전히 지원되지 않는다고 한다  [Jest using-vite Link](https://jestjs.io/docs/getting-started#using-vite)
     - Vite의 테스트 러너로 자리 잡고있는 Vitest를 선택
       - 하지만 마찬 가지로 아직 version 자체가 `0.33.0` 으로 완전하지는 않음
-2. **`jsdom`**
+2. `jsdom`
     - `happy-dom` 둘 중 하나를 생각하고 있었으나 `happy-dom`에는 아직 일부 지원하지 않는 Web API가 존재하는 것으로 인해 `jsdom`을 선택
-3. **`@testing-library`** (React Testing Library)
+3. `@testing-library` (React Testing Library)
     - react : React 컴포넌트의 사용자 관점에서 동작과 접근성 테스트
     - user-event: 브라우저 이벤트 시뮬레이션
     - jest-dom: Dom요소에 대한 단언문
@@ -55,7 +55,7 @@
       });
       ```
 
-    - `vite.config.ts`에 **`test`**를 작성하니 일어나는 에러.
+    - `vite.config.ts`에 `test`를 작성하니 일어나는 에러.
       > No overload matches this call.  
       > Overload 1 of 3, '(config: UserConfig): UserConfig', gave the following error.
       > Argument of type '{ plugins: PluginOption[][]; test: {}; }' is not assignable to parameter of type 'UserConfig'.
@@ -254,8 +254,8 @@ describe('App Router', () => {
 - 처음 **heading** 변수에서 에러가 났는데 `screen.getByRole('h1')` 넣어서 에라가 났던것
   - `screen.getByRole('heading', {level: 1})`로 변환;
 - `signInBtn` 변수에서 찾지 못하는 에러 발생. 옵션 `name`을 찾지 못해서 여러 개의 `button`을 발견해서 에러가 발생
-  - `screen.getByRole('button', {name: 'signin'})`이 **button**의 속성인 `name`이 아니라 **`aria-label`** 속성이여야 찾을 수 있다는 걸 깨닫고 **Button 컴포넌트** 에 `aria-label` 추가
-- **`ReferenceError: expect is not defined`** 에러 발생
+  - `screen.getByRole('button', {name: 'signin'})`이 **button**의 속성인 `name`이 아니라 `aria-label` 속성이여야 찾을 수 있다는 걸 깨닫고 **Button 컴포넌트** 에 `aria-label` 추가
+- `ReferenceError: expect is not defined` 에러 발생
   - **expect**뒤에 **toBeInTheDocument()** 인 **jest-dom**을 찾지 못해서 발생.
   - **jset-dom** 기능이 아닌 **vitest**의 자체적 기능이 있으나 **jest-dom** 기능이 많아서 같이 사용할 수 있게 설정을 할 수 있음.
   - 하지만 `setupFiles`로 설정을 해줘도 `globals`가 `true`가 아니면 찾지를 못해 에러 발생

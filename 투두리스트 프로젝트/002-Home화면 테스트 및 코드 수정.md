@@ -74,10 +74,10 @@ describe('Home Page', () => {
 ### Home.test.tsx 만들면서 힘들었던 부분 및 에러 부분
 
 - 이동 후 path 이름을 어떻게 가져 오는 가
-  - **`routers.state.location.pathname`** **createMemoryRouter** 의 값으로 `location.pathname` 가져와서 비교
+  - `routers.state.location.pathname` **createMemoryRouter** 의 값으로 `location.pathname` 가져와서 비교
 - 중복 내용 하나로 합치는 부분에서 routers 부분에서 에러
-  - 중복 되는 부분을 따로 위에 뺐으나 첫 번째 **`it`** 에서 `user.click`으로 인해 `/signup`으로 이동.
-  - 두 번째 **`it`** 에서 **SignUp** 페이지 내용으로 테스트를 실행하여 filed 발생
+  - 중복 되는 부분을 따로 위에 뺐으나 첫 번째 `it` 에서 `user.click`으로 인해 `/signup`으로 이동.
+  - 두 번째 `it` 에서 **SignUp** 페이지 내용으로 테스트를 실행하여 filed 발생
 
   ```typescript
   const user = userEvent.setup();

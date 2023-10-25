@@ -82,7 +82,7 @@ interface ButtonStyleProps {
 
 - styled-components로 스타일을 적용하여 컴포넌트로 만들었지만 **button** 이 자체적으로 가지고 있는 속성을 사용 못함.
 - 하지만 전 interface 처럼 넣어주는 것은 필요할 때마다 수정해야 하여 별로 좋아 보이지 않아서 새로운 방법을 찾아봄.
-- **`extends ButtonHTMLAttributes<HTMLButtonElement>`** React가 가지고 있는 button 속성 interfcae 적용
+- `extends ButtonHTMLAttributes<HTMLButtonElement>` React가 가지고 있는 button 속성 interfcae 적용
 - 스타일적으로 사용할 props는 따로 선언하고 button 자체 속성 props는 spread 연산자를 사용하여 적용
 
   ```typescript

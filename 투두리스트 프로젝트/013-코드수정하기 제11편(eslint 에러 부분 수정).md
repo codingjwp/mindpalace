@@ -17,7 +17,7 @@ eslint --cache --ext .ts,.tsx src/
 ## test.tsx 파일에 error 나오는 문제
 
 - 해당 파일은 에러 체크를 하지 말아야하는데 체크가 되어서 체크 안되도록 수정
-- **`.eslintignore`**에 아래 문구 추가
+- `.eslintignore`에 아래 문구 추가
 
 ```json
 # Test Files
@@ -77,7 +77,7 @@ export const HomeContainer = styled.div`
 
 ## btnicon.svg 에러 발생
 
-- 읽을 수 있는 파일이 아닌데 체크가 되어 **`.eslintignore`**에 아래 문구 추가
+- 읽을 수 있는 파일이 아닌데 체크가 되어 `.eslintignore`에 아래 문구 추가
 ![btniconSVG에러](https://github.com/codingjwp/mindpalace/assets/113403155/581e5dd7-f096-4cf1-8543-d1d25a42dd78)
 
 ## ModalContext hooks 부분 경고 발생
@@ -109,7 +109,7 @@ const postTodoCreateApi = (e: FormEvent): Promise<void> => { }
 
 - 그래서 async와 await를 써서는 수정 하는 방법이 없어 보여 해당 부분을 함수에서 지웠습니다.
 - 해당 부분을 지우고 then을 이용하여 처리하는 방법과 catch를 error을 지정하여 하였으나.
-- **`error  Invalid type "any" of template literal expression  @typescript-eslint/restrict-template-expressions`** 가 발생하였습니다.
+- `error  Invalid type "any" of template literal expression  @typescript-eslint/restrict-template-expressions` 가 발생하였습니다.
 - 하지만 해당 에러에 정확히 들어가는 경우를 알 수 없어서 방법을 찾는중 `String(error)`을 사용하여 명시적으로 문자열로 바꿔주면 에러가 사라지는 걸 확인 하였습니다.
 - 나머지 똑같은 에러가 나는 곳도 수정.
 

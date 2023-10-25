@@ -51,7 +51,7 @@
 ### InputField 수정 코드
 
 - width, height는 고정적으로 사용으로 size를 정 할 필요가 없어서 삭제
-- 나머지 경우 기본적으로 input에 있는 속성들로 **`InputHTMLAttributes<HTMLInputElement>>`** 로 타입을 가져와 **`props`** 로 속성 값을 가져오게 수정
+- 나머지 경우 기본적으로 input에 있는 속성들로 `InputHTMLAttributes<HTMLInputElement>>` 로 타입을 가져와 `props` 로 속성 값을 가져오게 수정
 - **type** 부분만 `text`, `password`로 두개만 사용
 - **label**을 감싸 웹 접근성을 높힘
 - 수정 전
