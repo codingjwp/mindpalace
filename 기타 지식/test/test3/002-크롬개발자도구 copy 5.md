@@ -1,0 +1,58 @@
+# **크롬 개발자 도구**
+
+[크롬 개발자 도구 공식 문서](https://developer.chrome.com/docs/devtools/)  
+|mac|window|
+|:---:|:---:|
+|`cmd + option + i`|`ctrl + shift + i`|  
+
+## **눈금자**
+
+아래의 단축키를 사용하여 명령어 실행창을 띄운 후 한글로는 `눈금자` 영어로는 `ruler` 를 입력  
+
+|mac|window|
+|:---:|:---:|
+|`shift + option + p`|`ctrl + shift + p`|  
+
+## **요소**
+
+### **스타일(Styles)**
+
+작성한 style 이 전부 표시 됩니다.  
+우선순위에 따라 취소된거나 주석처리 된 css도 확인할 수 있습니다.  
+
+### **계산됨(Computed)**
+
+최종적으로 적용 된 css만 확인 가능 합니다.  
+속성 값이 어디에 적용 되었는지도 확인이 가능합니다.  
+<img width="557" alt="computed" src="https://github.com/codingjwp/mindpalace/assets/113403155/cc13fd8e-ee33-409d-b319-01666956738f">
+
+## **색상 선택 도구**
+
+스타일에 `color: red` 입력  
+색상을 클릭하고 스포라이트를 선택하여 필요한 색상에 클릭  
+
+<img width="333" alt="color selector" src="https://github.com/codingjwp/mindpalace/assets/113403155/493867c6-db55-4ab0-920d-b6b01583840d" />  
+
+### **웹접근성을 의한 텍스트 명도 대비**
+
+텍스트 명도 대비 `4.5 : 1`  
+큰 글자(24px 이상)or 굵은 글자(19px 이상)은 `3 : 1`  
+color 파레트에서 확인이 가능  
+마지막 노드의 color 파레트에서만 확인이 가능.  
+
+## **가상 클래스 확인**
+
+요소를 클릭하고 가상클래스 를 선택  
+
+<img width="696" alt="selector" src="https://github.com/codingjwp/mindpalace/assets/113403155/b54f2823-bb25-45c4-94e3-348055b8d2e9" />
+
+## **자바스크립트 사용중지**
+
+환경설정에서 자바스크립트 사용중지를 체크해제  
+또는 명령어 실행창에서 자바스크립트를 쳐서 실행중지를 클릭합니다.
+
+## **디바이스 모드**
+
+환경설정에서 실험을 클릭 필터에 dual 검색  
+Emulation: Support dual screen mode 체크  
+디바이스모드는 실제 디바이스와의 환경과 다릅니다. 실제 테스트는 디바이스로 해야합니다.  
