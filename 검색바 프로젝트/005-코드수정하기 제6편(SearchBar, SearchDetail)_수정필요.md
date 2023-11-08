@@ -9,7 +9,8 @@
   const [searchText, setSearchText] = useRecoilState(searchTextState);
   const [detailIndex, setDetailIndex] = useRecoilState(searchDetailIndex);
 ```
-Key Press 이벤트 발생시 일어나는 코드 입니다. 
+
+Key Press 이벤트 발생시 일어나는 코드 입니다.
 
 - `ArrowUp`, `ArrowDown` 키가 눌러졌을 시 `SearchDetail`가 존재하는 경우 **0 ~ 4** 위치에 해당하는 색상을 변경합니다.
 - `Enter` 키가 눌러졌을 시 `SearchDetail`에 detailIndex 값이 **0 ~ 4** 일 경우 그 해당 한글값을 `input(SearchBar)`에 입력을 넣어 줍니다.
@@ -184,6 +185,7 @@ useEffect(() => {
 }, [detailIndex]);
 
 ```
+
 `keyPress` 이벤트로 인해 해당 부분의 값이 넘어갈 수도 있어서 데이터 크기 이상으로 넘어 갈 경우 원상태로 돌려놓는 코드를 작성했는데 필요하지가 않아서 수정하였습니다.
 
 위 코드를 삭제, 0보다 같거나 작을 경우 코드
@@ -191,6 +193,7 @@ useEffect(() => {
 ```typescript
 setDetailIndex(prev => prev <= 0 ? prev : prev - 1);
 ```
+
 li 수보다 많을 경우 코드
 
 ```typescript
