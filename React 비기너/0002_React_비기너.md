@@ -25,7 +25,7 @@ Window 오브젝트는 HTML 스펙에 작성되어 있습니다.
 ```javascript
 /**
  * 결괏값
- * 1. undefinde
+ * 1. undefined
  * 2. 6
 */
 
