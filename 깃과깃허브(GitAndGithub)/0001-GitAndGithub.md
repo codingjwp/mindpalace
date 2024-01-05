@@ -48,6 +48,17 @@ git stash
 git stash push -m "(임시저장하는 이유)"
 ```
 
+하지만 위에 커맨드는 변경된 내용을 전체 적으로 저장하는 방법입니다.  
+
+그럼 각각의 파일 예를 들어 `A.file`, `B.file`에 각각 변경사항이 있을때 `A.file`만 `stash`를 하고 싶으면 어떻게 해야할까?
+
+- `--` 옵션의 끝을 나타내고 파일 경로나 패턴을 지정하는데 사용.
+
+```bash
+## Staging area에 등록을 할려면 git add 또는 --index 옵션을 사용하여 넣어줘야 합니다
+git stash push -- (파일 위치)
+```
+
 ### 임시 저장 한 목록을 확인하는 방법
 
 저장한 목록을 봅니다 기본적으로 Stack 형태로 최신 저장한 부분이 위에 작성되어 있습니다.  
@@ -75,6 +86,7 @@ git stash pop
 git stash pop stash@{(번호)}
 ```
 
+[추가 적인 내용](https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning)
 
 ## cherryPick
 
